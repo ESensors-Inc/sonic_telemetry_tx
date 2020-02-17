@@ -107,31 +107,37 @@ bool sendPWM(uint8_t *data) {
 }
 
 void readPressureSensor() {
+    
     //read pressure registers
     raw_pressure = 0;
-    value = 0;
-    value = I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, 0x2A);
-    raw_pressure = value;
-    value = I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, 0x29);
-    raw_pressure = (raw_pressure << 8) + value;
-    value = I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, 0x28);
-    raw_pressure = (raw_pressure << 8) + value;
+//    value = 0;
+//    value = I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, 0x2A);
+//    raw_pressure = value;    
+//    value = I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, 0x29);
+//    raw_pressure = (raw_pressure << 8) + value;
+    raw_pressure = I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, 0x2A);
+    raw_pressure = (raw_pressure << 8) + I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, 0x29);
+    raw_pressure = (raw_pressure << 8) + I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, 0x28);
+//    raw_pressure = (raw_pressure << 8) + value;
     if (raw_pressure & 0x800000) {
         raw_pressure = (0xff000000 | raw_pressure);
     }
     pressure = (float) (raw_pressure) / 4096.0;
     __delay_ms(100);
+    
     //read temperature registers
     raw_temperature = 0;
-    value = 0;
-    value = I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, TMPR_H);
-    raw_temperature = value;
-    value = I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, TMPR_L);
-    raw_temperature = (raw_temperature << 8) + value;
+//    value = 0;
+//    value = I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, TMPR_H);
+//    raw_temperature = value;
+//    value = I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, TMPR_L);
+//    raw_temperature = (raw_temperature << 8) + value;
+    raw_temperature = I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, TMPR_H);
+    raw_temperature = (raw_temperature << 8) + I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, TMPR_L);
     temperature = (float) (raw_temperature) / 100.00;
     
-//            printf("Pressure : %f\n",pressure);
-//            printf("Temperature : %f\n",temperature);
+            printf("Pressure : %f\n",pressure);
+            printf("Temperature : %f\n",temperature);
 }
 void sendFloat(float * f){
     unsigned char **temp = (unsigned char**) &f;

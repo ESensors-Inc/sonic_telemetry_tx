@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=sonic_telemetry_tx_v1.X
+PROJECTNAME=sonic_telemetry_tx
 
 # Active Configuration
 DEFAULTCONF=default

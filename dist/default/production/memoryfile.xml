@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/default/production\sonic_telemetry_tx_v1.X.production.hex">
+  <executable name="dist/default/production\sonic_telemetry_tx.production.hex">
     <memory name="program">
       <units>words</units>
       <length>16384</length>
-      <used>697</used>
-      <free>15687</free>
+      <used>6705</used>
+      <free>9679</free>
     </memory>
     <memory name="data">
       <units>bytes</units>
       <length>2048</length>
-      <used>148</used>
-      <free>1900</free>
+      <used>415</used>
+      <free>1633</free>
     </memory>
   </executable>
 </project>

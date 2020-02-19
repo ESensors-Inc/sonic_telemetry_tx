@@ -166,36 +166,33 @@ void main(void) {
     uint8_t n = sizeof (dummy_data);
     uint8_t i = 0;
     while (1) {
-        // Add your application code
-        readPressureSensor();
-        __delay_ms(1000);
-        //        // routine to measure pressure and sensor
-        ////        readPsrSnsr();
-        //        
-        //            printf("Pressure : %f\n",pressure);
-        //            printf("Temperature : %f\n",temperature);
+        // Add your application code        
+
         /*The whole sending data sequence through PWM and UART*/
         //keep the PWM on PORTC in high input impedance state
-        //        TRISC = 0xFF;
-        //        if (PORTCbits.RC4 == 1) {
-        //        }//check if button is pressed and start sending
-        //        else {
-        //            LATCbits.LATC3 = 1; //turn ON LED to indicate transmission
-        //            TRISC = 0xBF; //set the PORT C PWM to o/p
-        ////            for (i = 0; i < n; i++) {
-        ////                sendPWM(&dummy_data[i]);
-        ////            }
-        //            //start header pwm
-        ////            for(i=0;i<4;i++)sendPWM(&hdr_trl[i]);
-        //            readPsrSnsr();
-        ////            sendFloat(&pressure);
-        ////            sendFloat(&temperature);                    
-        //            //end trailer pwm
-        ////            for(i=0;i<4;i++)sendPWM(&hdr_trl[i]);
-        //            //            send_pwm(&i); //make data and send one byte at a time.//sending dummy data now
-        //            LATCbits.LATC3 = 0; //turn OFF LED to indicate end
-        //            //            printf("%c", 'd'); //send data to UART to test at 1200 baud
-        //        }
+        TRISC = 0xFF;
+        if (PORTCbits.RC4 == 1) {
+        }//check if button is pressed and start sending
+        else {
+            // routine to measure pressure and sensor
+            readPressureSensor();
+            __delay_ms(500);
+            LATCbits.LATC3 = 1; //turn ON LED to indicate transmission
+            TRISC = 0xBF; //set the PORT C PWM to o/p
+            for (i = 0; i < n; i++) {
+                sendPWM(&dummy_data[i]);
+            }
+            //start header pwm
+            ////            for(i=0;i<4;i++)sendPWM(&hdr_trl[i]);
+            //            readPsrSnsr();
+            ////            sendFloat(&pressure);
+            ////            sendFloat(&temperature);                    
+            //            //end trailer pwm
+            ////            for(i=0;i<4;i++)sendPWM(&hdr_trl[i]);
+            //            //            send_pwm(&i); //make data and send one byte at a time.//sending dummy data now
+            LATCbits.LATC3 = 0; //turn OFF LED to indicate end
+            //            //            printf("%c", 'd'); //send data to UART to test at 1200 baud
+        }
     }
 }
 /**

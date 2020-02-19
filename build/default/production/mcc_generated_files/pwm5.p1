@@ -1094,11 +1094,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pwm5.c: 62:     PWM5CON = 0x80;
 [e = _PWM5CON -> -> 128 `i `uc ]
 "65
-[; ;mcc_generated_files/pwm5.c: 65:     PWM5DCH = 0x68;
-[e = _PWM5DCH -> -> 104 `i `uc ]
+[; ;mcc_generated_files/pwm5.c: 65:     PWM5DCH = 0x34;
+[e = _PWM5DCH -> -> 52 `i `uc ]
 "68
-[; ;mcc_generated_files/pwm5.c: 68:     PWM5DCL = 0xC0;
-[e = _PWM5DCL -> -> 192 `i `uc ]
+[; ;mcc_generated_files/pwm5.c: 68:     PWM5DCL = 0x40;
+[e = _PWM5DCL -> -> 64 `i `uc ]
 "71
 [; ;mcc_generated_files/pwm5.c: 71:     PWMTMRSbits.P5TSEL = 1;
 [e = . . _PWMTMRSbits 0 0 -> -> 1 `i `uc ]

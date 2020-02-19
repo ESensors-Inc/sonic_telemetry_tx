@@ -11819,15 +11819,15 @@ _Bool sendPWM(uint8_t *data) {
     uint8_t j = 0;
 
     setLow();
-    _delay((unsigned long)((13.3333333333)*(32000000/4000.0)));
+    _delay((unsigned long)((13.3333333333)*(16000000/4000.0)));
 
     for (j = 0; j < 8; j++) {
         (!!((*data >> j)&0x01)) ? setHigh() : setLow();
-        _delay((unsigned long)((13.3333333333)*(32000000/4000.0)));
+        _delay((unsigned long)((13.3333333333)*(16000000/4000.0)));
     }
 
     setHigh();
-    _delay((unsigned long)((13.3333333333)*(32000000/4000.0)));
+    _delay((unsigned long)((13.3333333333)*(16000000/4000.0)));
     if (*data == 0)return 1;
     return 0;
 
@@ -11845,15 +11845,10 @@ void readPressureSensor() {
         raw_pressure = (0xff000000 | raw_pressure);
     }
     pressure = (float) (raw_pressure) / 4096.0;
-    _delay((unsigned long)((500)*(32000000/4000.0)));
+    _delay((unsigned long)((500)*(16000000/4000.0)));
 
 
     raw_temperature = 0;
-
-
-
-
-
     raw_temperature = I2C1_Read1ByteRegister(0x5D, 0x2C);
     raw_temperature = (raw_temperature << 8) + I2C1_Read1ByteRegister(0x5D, 0x2B);
     temperature = (float) (raw_temperature) / 100.00;
@@ -11900,8 +11895,24 @@ void main(void) {
     uint8_t i = 0;
     while (1) {
 
-        readPressureSensor();
-        _delay((unsigned long)((1000)*(32000000/4000.0)));
-# 204 "main.c"
+
+
+
+        TRISC = 0xFF;
+        if (PORTCbits.RC4 == 1) {
+        }
+        else {
+
+            readPressureSensor();
+            _delay((unsigned long)((500)*(16000000/4000.0)));
+            LATCbits.LATC3 = 1;
+            TRISC = 0xBF;
+            for (i = 0; i < n; i++) {
+                sendPWM(&dummy_data[i]);
+            }
+# 193 "main.c"
+            LATCbits.LATC3 = 0;
+
+        }
     }
 }

@@ -11446,10 +11446,10 @@ typedef uint32_t uint_fast32_t;
     PWM5CON = 0x80;
 
 
-    PWM5DCH = 0x68;
+    PWM5DCH = 0x34;
 
 
-    PWM5DCL = 0xC0;
+    PWM5DCL = 0x40;
 
 
     PWMTMRSbits.P5TSEL = 1;

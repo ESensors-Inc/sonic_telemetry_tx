@@ -182,16 +182,7 @@ void main(void) {
             for (i = 0; i < n; i++) {
                 sendPWM(&dummy_data[i]);
             }
-            //start header pwm
-            ////            for(i=0;i<4;i++)sendPWM(&hdr_trl[i]);
-            //            readPsrSnsr();
-            ////            sendFloat(&pressure);
-            ////            sendFloat(&temperature);                    
-            //            //end trailer pwm
-            ////            for(i=0;i<4;i++)sendPWM(&hdr_trl[i]);
-            //            //            send_pwm(&i); //make data and send one byte at a time.//sending dummy data now
             LATCbits.LATC3 = 0; //turn OFF LED to indicate end
-            //            //            printf("%c", 'd'); //send data to UART to test at 1200 baud
         }
     }
 }

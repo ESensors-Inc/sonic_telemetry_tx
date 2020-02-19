@@ -109,9 +109,9 @@ void readPressureSensor() {
 
     //read pressure registers
     raw_pressure = 0;
-    raw_pressure = I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, 0x2A);
-    raw_pressure = (raw_pressure << 8) + I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, 0x29);
-    raw_pressure = (raw_pressure << 8) + I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, 0x28);
+    raw_pressure = I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, PRSR_H);
+    raw_pressure = (raw_pressure << 8) + I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, PRSR_M);
+    raw_pressure = (raw_pressure << 8) + I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, PRSR_L);
 
     if (raw_pressure & 0x800000) {
         raw_pressure = (0xff000000 | raw_pressure);

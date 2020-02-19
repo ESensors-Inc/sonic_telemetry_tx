@@ -142,7 +142,7 @@ text101 CODE 0 1DAE 1DAE 1 2
 text102 CODE 0 1DB1 1DB1 3 2
 text103 CODE 0 1F7B 1F7B 18 2
 bssCOMMON COMMON 1 7C 7C 1 1
-$C:\Users\zameer\AppData\Local\Temp\s760.o
+$C:\Users\zameer\AppData\Local\Temp\sblc.o
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 23 23 2 2
 config CONFIG 0 8007 8007 4 2
@@ -257,55 +257,55 @@ STRING 2034-3FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\sonic_telemetry_tx.production.o
-25 cinit CODE >7048:C:\Users\zameer\AppData\Local\Temp\s760.
-25 cinit CODE >7051:C:\Users\zameer\AppData\Local\Temp\s760.
-25 cinit CODE >7158:C:\Users\zameer\AppData\Local\Temp\s760.
-26 cinit CODE >7159:C:\Users\zameer\AppData\Local\Temp\s760.
-27 cinit CODE >7160:C:\Users\zameer\AppData\Local\Temp\s760.
-28 cinit CODE >7161:C:\Users\zameer\AppData\Local\Temp\s760.
-29 cinit CODE >7162:C:\Users\zameer\AppData\Local\Temp\s760.
-2A cinit CODE >7163:C:\Users\zameer\AppData\Local\Temp\s760.
-2B cinit CODE >7164:C:\Users\zameer\AppData\Local\Temp\s760.
-2C cinit CODE >7165:C:\Users\zameer\AppData\Local\Temp\s760.
-2D cinit CODE >7166:C:\Users\zameer\AppData\Local\Temp\s760.
-2E cinit CODE >7167:C:\Users\zameer\AppData\Local\Temp\s760.
-31 cinit CODE >7171:C:\Users\zameer\AppData\Local\Temp\s760.
-32 cinit CODE >7172:C:\Users\zameer\AppData\Local\Temp\s760.
-33 cinit CODE >7173:C:\Users\zameer\AppData\Local\Temp\s760.
-34 cinit CODE >7174:C:\Users\zameer\AppData\Local\Temp\s760.
-35 cinit CODE >7175:C:\Users\zameer\AppData\Local\Temp\s760.
-36 cinit CODE >7176:C:\Users\zameer\AppData\Local\Temp\s760.
-37 cinit CODE >7177:C:\Users\zameer\AppData\Local\Temp\s760.
-38 cinit CODE >7178:C:\Users\zameer\AppData\Local\Temp\s760.
-39 cinit CODE >7179:C:\Users\zameer\AppData\Local\Temp\s760.
-3A cinit CODE >7180:C:\Users\zameer\AppData\Local\Temp\s760.
-3D cinit CODE >7197:C:\Users\zameer\AppData\Local\Temp\s760.
-3E cinit CODE >7201:C:\Users\zameer\AppData\Local\Temp\s760.
-3F cinit CODE >7202:C:\Users\zameer\AppData\Local\Temp\s760.
-40 cinit CODE >7203:C:\Users\zameer\AppData\Local\Temp\s760.
-41 cinit CODE >7204:C:\Users\zameer\AppData\Local\Temp\s760.
-42 cinit CODE >7208:C:\Users\zameer\AppData\Local\Temp\s760.
-43 cinit CODE >7209:C:\Users\zameer\AppData\Local\Temp\s760.
-44 cinit CODE >7210:C:\Users\zameer\AppData\Local\Temp\s760.
-45 cinit CODE >7211:C:\Users\zameer\AppData\Local\Temp\s760.
-46 cinit CODE >7212:C:\Users\zameer\AppData\Local\Temp\s760.
-47 cinit CODE >7213:C:\Users\zameer\AppData\Local\Temp\s760.
-4A cinit CODE >7217:C:\Users\zameer\AppData\Local\Temp\s760.
-4B cinit CODE >7218:C:\Users\zameer\AppData\Local\Temp\s760.
-4C cinit CODE >7219:C:\Users\zameer\AppData\Local\Temp\s760.
-4D cinit CODE >7220:C:\Users\zameer\AppData\Local\Temp\s760.
-4E cinit CODE >7221:C:\Users\zameer\AppData\Local\Temp\s760.
-4F cinit CODE >7222:C:\Users\zameer\AppData\Local\Temp\s760.
-52 cinit CODE >7226:C:\Users\zameer\AppData\Local\Temp\s760.
-53 cinit CODE >7227:C:\Users\zameer\AppData\Local\Temp\s760.
-54 cinit CODE >7228:C:\Users\zameer\AppData\Local\Temp\s760.
-55 cinit CODE >7229:C:\Users\zameer\AppData\Local\Temp\s760.
-56 cinit CODE >7230:C:\Users\zameer\AppData\Local\Temp\s760.
-57 cinit CODE >7231:C:\Users\zameer\AppData\Local\Temp\s760.
-59 cinit CODE >7237:C:\Users\zameer\AppData\Local\Temp\s760.
-59 cinit CODE >7239:C:\Users\zameer\AppData\Local\Temp\s760.
-5A cinit CODE >7240:C:\Users\zameer\AppData\Local\Temp\s760.
-5B cinit CODE >7241:C:\Users\zameer\AppData\Local\Temp\s760.
+25 cinit CODE >7048:C:\Users\zameer\AppData\Local\Temp\sblc.
+25 cinit CODE >7051:C:\Users\zameer\AppData\Local\Temp\sblc.
+25 cinit CODE >7158:C:\Users\zameer\AppData\Local\Temp\sblc.
+26 cinit CODE >7159:C:\Users\zameer\AppData\Local\Temp\sblc.
+27 cinit CODE >7160:C:\Users\zameer\AppData\Local\Temp\sblc.
+28 cinit CODE >7161:C:\Users\zameer\AppData\Local\Temp\sblc.
+29 cinit CODE >7162:C:\Users\zameer\AppData\Local\Temp\sblc.
+2A cinit CODE >7163:C:\Users\zameer\AppData\Local\Temp\sblc.
+2B cinit CODE >7164:C:\Users\zameer\AppData\Local\Temp\sblc.
+2C cinit CODE >7165:C:\Users\zameer\AppData\Local\Temp\sblc.
+2D cinit CODE >7166:C:\Users\zameer\AppData\Local\Temp\sblc.
+2E cinit CODE >7167:C:\Users\zameer\AppData\Local\Temp\sblc.
+31 cinit CODE >7171:C:\Users\zameer\AppData\Local\Temp\sblc.
+32 cinit CODE >7172:C:\Users\zameer\AppData\Local\Temp\sblc.
+33 cinit CODE >7173:C:\Users\zameer\AppData\Local\Temp\sblc.
+34 cinit CODE >7174:C:\Users\zameer\AppData\Local\Temp\sblc.
+35 cinit CODE >7175:C:\Users\zameer\AppData\Local\Temp\sblc.
+36 cinit CODE >7176:C:\Users\zameer\AppData\Local\Temp\sblc.
+37 cinit CODE >7177:C:\Users\zameer\AppData\Local\Temp\sblc.
+38 cinit CODE >7178:C:\Users\zameer\AppData\Local\Temp\sblc.
+39 cinit CODE >7179:C:\Users\zameer\AppData\Local\Temp\sblc.
+3A cinit CODE >7180:C:\Users\zameer\AppData\Local\Temp\sblc.
+3D cinit CODE >7197:C:\Users\zameer\AppData\Local\Temp\sblc.
+3E cinit CODE >7201:C:\Users\zameer\AppData\Local\Temp\sblc.
+3F cinit CODE >7202:C:\Users\zameer\AppData\Local\Temp\sblc.
+40 cinit CODE >7203:C:\Users\zameer\AppData\Local\Temp\sblc.
+41 cinit CODE >7204:C:\Users\zameer\AppData\Local\Temp\sblc.
+42 cinit CODE >7208:C:\Users\zameer\AppData\Local\Temp\sblc.
+43 cinit CODE >7209:C:\Users\zameer\AppData\Local\Temp\sblc.
+44 cinit CODE >7210:C:\Users\zameer\AppData\Local\Temp\sblc.
+45 cinit CODE >7211:C:\Users\zameer\AppData\Local\Temp\sblc.
+46 cinit CODE >7212:C:\Users\zameer\AppData\Local\Temp\sblc.
+47 cinit CODE >7213:C:\Users\zameer\AppData\Local\Temp\sblc.
+4A cinit CODE >7217:C:\Users\zameer\AppData\Local\Temp\sblc.
+4B cinit CODE >7218:C:\Users\zameer\AppData\Local\Temp\sblc.
+4C cinit CODE >7219:C:\Users\zameer\AppData\Local\Temp\sblc.
+4D cinit CODE >7220:C:\Users\zameer\AppData\Local\Temp\sblc.
+4E cinit CODE >7221:C:\Users\zameer\AppData\Local\Temp\sblc.
+4F cinit CODE >7222:C:\Users\zameer\AppData\Local\Temp\sblc.
+52 cinit CODE >7226:C:\Users\zameer\AppData\Local\Temp\sblc.
+53 cinit CODE >7227:C:\Users\zameer\AppData\Local\Temp\sblc.
+54 cinit CODE >7228:C:\Users\zameer\AppData\Local\Temp\sblc.
+55 cinit CODE >7229:C:\Users\zameer\AppData\Local\Temp\sblc.
+56 cinit CODE >7230:C:\Users\zameer\AppData\Local\Temp\sblc.
+57 cinit CODE >7231:C:\Users\zameer\AppData\Local\Temp\sblc.
+59 cinit CODE >7237:C:\Users\zameer\AppData\Local\Temp\sblc.
+59 cinit CODE >7239:C:\Users\zameer\AppData\Local\Temp\sblc.
+5A cinit CODE >7240:C:\Users\zameer\AppData\Local\Temp\sblc.
+5B cinit CODE >7241:C:\Users\zameer\AppData\Local\Temp\sblc.
 4 intentry CODE >52:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/interrupt_manager.c
 6 intentry CODE >55:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/interrupt_manager.c
 8 intentry CODE >57:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/interrupt_manager.c
@@ -1469,23 +1469,23 @@ BE8 text8 CODE >1363:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\
 15A4 maintext CODE >184:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
 15A8 maintext CODE >183:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
 15AD maintext CODE >184:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
-15B4 maintext CODE >193:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
-1E44 clrtext CODE >7186:C:\Users\zameer\AppData\Local\Temp\s760.
-1E44 clrtext CODE >7187:C:\Users\zameer\AppData\Local\Temp\s760.
-1E45 clrtext CODE >7188:C:\Users\zameer\AppData\Local\Temp\s760.
-1E45 clrtext CODE >7189:C:\Users\zameer\AppData\Local\Temp\s760.
-1E46 clrtext CODE >7190:C:\Users\zameer\AppData\Local\Temp\s760.
-1E47 clrtext CODE >7191:C:\Users\zameer\AppData\Local\Temp\s760.
-1E48 clrtext CODE >7192:C:\Users\zameer\AppData\Local\Temp\s760.
-1E49 clrtext CODE >7193:C:\Users\zameer\AppData\Local\Temp\s760.
-1E4A inittext CODE >7147:C:\Users\zameer\AppData\Local\Temp\s760.
-1E4A inittext CODE >7148:C:\Users\zameer\AppData\Local\Temp\s760.
-1E4B inittext CODE >7149:C:\Users\zameer\AppData\Local\Temp\s760.
-1E4B inittext CODE >7150:C:\Users\zameer\AppData\Local\Temp\s760.
-1E4C inittext CODE >7151:C:\Users\zameer\AppData\Local\Temp\s760.
-1E4D inittext CODE >7152:C:\Users\zameer\AppData\Local\Temp\s760.
-1E4E inittext CODE >7153:C:\Users\zameer\AppData\Local\Temp\s760.
-1E4F inittext CODE >7154:C:\Users\zameer\AppData\Local\Temp\s760.
+15B4 maintext CODE >185:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
+1E44 clrtext CODE >7186:C:\Users\zameer\AppData\Local\Temp\sblc.
+1E44 clrtext CODE >7187:C:\Users\zameer\AppData\Local\Temp\sblc.
+1E45 clrtext CODE >7188:C:\Users\zameer\AppData\Local\Temp\sblc.
+1E45 clrtext CODE >7189:C:\Users\zameer\AppData\Local\Temp\sblc.
+1E46 clrtext CODE >7190:C:\Users\zameer\AppData\Local\Temp\sblc.
+1E47 clrtext CODE >7191:C:\Users\zameer\AppData\Local\Temp\sblc.
+1E48 clrtext CODE >7192:C:\Users\zameer\AppData\Local\Temp\sblc.
+1E49 clrtext CODE >7193:C:\Users\zameer\AppData\Local\Temp\sblc.
+1E4A inittext CODE >7147:C:\Users\zameer\AppData\Local\Temp\sblc.
+1E4A inittext CODE >7148:C:\Users\zameer\AppData\Local\Temp\sblc.
+1E4B inittext CODE >7149:C:\Users\zameer\AppData\Local\Temp\sblc.
+1E4B inittext CODE >7150:C:\Users\zameer\AppData\Local\Temp\sblc.
+1E4C inittext CODE >7151:C:\Users\zameer\AppData\Local\Temp\sblc.
+1E4D inittext CODE >7152:C:\Users\zameer\AppData\Local\Temp\sblc.
+1E4E inittext CODE >7153:C:\Users\zameer\AppData\Local\Temp\sblc.
+1E4F inittext CODE >7154:C:\Users\zameer\AppData\Local\Temp\sblc.
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -1550,7 +1550,7 @@ _TMR2 1D 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 _WPUA 20C 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 _WPUB 20D 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 _WPUC 20E 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
-___sp 0 0 STACK 2 stack C:\Users\zameer\AppData\Local\Temp\s760.o
+___sp 0 0 STACK 2 stack C:\Users\zameer\AppData\Local\Temp\sblc.o
 _dbuf 220 0 BANK4 1 bssBANK4 dist/default/production\sonic_telemetry_tx.production.o
 _main 2AA2 0 CODE 0 maintext dist/default/production\sonic_telemetry_tx.production.o
 _nout 156 0 BANK2 1 bssBANK2 dist/default/production\sonic_telemetry_tx.production.o
@@ -1559,7 +1559,7 @@ btemp 7E 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 pad@i 2C 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
 pad@p 29 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
 pad@w 2E 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
-start 46 0 CODE 0 init C:\Users\zameer\AppData\Local\Temp\s760.o
+start 46 0 CODE 0 init C:\Users\zameer\AppData\Local\Temp\sblc.o
 ___flmul@aexp 32 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
 ___flmul@bexp 33 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
 ___flmul@prod 34 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
@@ -1611,12 +1611,12 @@ __size_of_vfpfcnvrt 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.produ
 rd1RegCompleteHandler@ptr 7A 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.production.o
 __size_of_rd1RegCompleteHandler 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 __size_of_I2C1_MasterWaitForEvent 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\zameer\AppData\Local\Temp\s760.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\zameer\AppData\Local\Temp\s760.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\zameer\AppData\Local\Temp\s760.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\zameer\AppData\Local\Temp\s760.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\zameer\AppData\Local\Temp\s760.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\zameer\AppData\Local\Temp\s760.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\zameer\AppData\Local\Temp\sblc.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\zameer\AppData\Local\Temp\sblc.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\zameer\AppData\Local\Temp\sblc.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\zameer\AppData\Local\Temp\sblc.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\zameer\AppData\Local\Temp\sblc.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\zameer\AppData\Local\Temp\sblc.o
 __ptext100 3BA4 0 CODE 0 text100 dist/default/production\sonic_telemetry_tx.production.o
 __ptext101 3B5C 0 CODE 0 text101 dist/default/production\sonic_telemetry_tx.production.o
 __ptext102 3B62 0 CODE 0 text102 dist/default/production\sonic_telemetry_tx.production.o
@@ -1713,8 +1713,8 @@ _INLVLC 38E 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 I2C1_MasterSendTxData@data 71 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.production.o
 ?_strlen 71 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.production.o
 __Umul8_16@multiplicand 71 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.production.o
-___stackhi 27EF 0 ABS 0 - C:\Users\zameer\AppData\Local\Temp\s760.o
-___stacklo 21A7 0 ABS 0 - C:\Users\zameer\AppData\Local\Temp\s760.o
+___stackhi 27EF 0 ABS 0 - C:\Users\zameer\AppData\Local\Temp\sblc.o
+___stacklo 21A7 0 ABS 0 - C:\Users\zameer\AppData\Local\Temp\sblc.o
 __end_of_efgtoa DE2 0 CODE 0 text10 dist/default/production\sonic_telemetry_tx.production.o
 __size_of_strncmp 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 _EUSART_Initialize 25B8 0 CODE 0 text91 dist/default/production\sonic_telemetry_tx.production.o
@@ -1801,7 +1801,7 @@ _WDTCON 97 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 fputc@fp 76 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.production.o
 fputs@fp 20 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
 _EUSART_TxDefaultInterruptHandler 169 0 BANK2 1 nvBANK2 dist/default/production\sonic_telemetry_tx.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\zameer\AppData\Local\Temp\s760.o
+___int_sp 0 0 STACK 2 stack C:\Users\zameer\AppData\Local\Temp\sblc.o
 __end_of_setLow 3D50 0 CODE 0 text3 dist/default/production\sonic_telemetry_tx.production.o
 I2C1_Read1ByteRegister@returnValue 2B 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
 _rd2RegCompleteHandler 3E0A 0 CODE 0 text70 dist/default/production\sonic_telemetry_tx.production.o
@@ -2015,7 +2015,7 @@ __HnvBANK3 0 0 ABS 0 nvBANK3 -
 __Lintentry 8 0 CODE 0 intentry -
 strcpy@d 77 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.production.o
 strcpy@s 75 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\zameer\AppData\Local\Temp\s760.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\zameer\AppData\Local\Temp\sblc.o
 strlen@a 74 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.production.o
 strlen@s 75 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.production.o
 __size_of_wr2RegCompleteHandler 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o

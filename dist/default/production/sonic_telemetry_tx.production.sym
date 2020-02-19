@@ -1105,7 +1105,7 @@ text67 3B5E 3B61 CODE 3B5E 0
 text101 3B5C 3B5D CODE 3B5C 0
 %locals
 dist/default/production\sonic_telemetry_tx.production.o
-C:\Users\zameer\AppData\Local\Temp\s760.
+C:\Users\zameer\AppData\Local\Temp\sblc.
 7048 25 0 CODE 0
 7051 25 0 CODE 0
 7158 25 0 CODE 0
@@ -1192,7 +1192,7 @@ main.c
 184 15A4 0 CODE 0
 183 15A8 0 CODE 0
 184 15AD 0 CODE 0
-193 15B4 0 CODE 0
+185 15B4 0 CODE 0
 85 1DCF 0 CODE 0
 87 1DCF 0 CODE 0
 88 1DD1 0 CODE 0

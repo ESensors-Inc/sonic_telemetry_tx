@@ -11910,9 +11910,7 @@ void main(void) {
             for (i = 0; i < n; i++) {
                 sendPWM(&dummy_data[i]);
             }
-# 193 "main.c"
             LATCbits.LATC3 = 0;
-
         }
     }
 }

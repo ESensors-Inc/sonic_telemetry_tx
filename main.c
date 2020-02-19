@@ -62,7 +62,6 @@ uint8_t value;
 static float pressure;
 static float temperature;
 
-
 /*
  
  * Subroutines
@@ -107,45 +106,37 @@ bool sendPWM(uint8_t *data) {
 }
 
 void readPressureSensor() {
-    
+
     //read pressure registers
     raw_pressure = 0;
-//    value = 0;
-//    value = I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, 0x2A);
-//    raw_pressure = value;    
-//    value = I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, 0x29);
-//    raw_pressure = (raw_pressure << 8) + value;
     raw_pressure = I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, 0x2A);
     raw_pressure = (raw_pressure << 8) + I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, 0x29);
     raw_pressure = (raw_pressure << 8) + I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, 0x28);
-//    raw_pressure = (raw_pressure << 8) + value;
+
     if (raw_pressure & 0x800000) {
         raw_pressure = (0xff000000 | raw_pressure);
     }
     pressure = (float) (raw_pressure) / 4096.0;
-    __delay_ms(100);
-    
+    __delay_ms(500);
+
     //read temperature registers
     raw_temperature = 0;
-//    value = 0;
-//    value = I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, TMPR_H);
-//    raw_temperature = value;
-//    value = I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, TMPR_L);
-//    raw_temperature = (raw_temperature << 8) + value;
     raw_temperature = I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, TMPR_H);
     raw_temperature = (raw_temperature << 8) + I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, TMPR_L);
     temperature = (float) (raw_temperature) / 100.00;
-    
-            printf("Pressure : %f\n",pressure);
-            printf("Temperature : %f\n",temperature);
+
+    printf("Pressure : %f\n", pressure);
+    printf("Temperature : %f\n", temperature);
 }
-void sendFloat(float * f){
+
+void sendFloat(float * f) {
     unsigned char **temp = (unsigned char**) &f;
     sendPWM(*temp++);
     sendPWM(*temp++);
     sendPWM(*temp++);
     sendPWM(*temp);
 }
+
 /*
                          Main application
  */
@@ -153,8 +144,8 @@ void main(void) {
     //initialize the variables
     char hdr_trl[] = {0xFF, 0x00, 0xFF, 0x00};
     // initialize the device
-    SYSTEM_Initialize();    
-    setZero();         //shutdown the PWM
+    SYSTEM_Initialize();
+    setZero(); //shutdown the PWM
     pressure = 1013.134;
     temperature = 24.76;
     // When using interrupts, you need to set the Global and Peripheral Interrupt Enable bits
@@ -177,31 +168,34 @@ void main(void) {
     while (1) {
         // Add your application code
         readPressureSensor();
-        // routine to measure pressure and sensor
-//        readPsrSnsr();
-        
+        __delay_ms(1000);
+        //        // routine to measure pressure and sensor
+        ////        readPsrSnsr();
+        //        
+        //            printf("Pressure : %f\n",pressure);
+        //            printf("Temperature : %f\n",temperature);
         /*The whole sending data sequence through PWM and UART*/
         //keep the PWM on PORTC in high input impedance state
-//        TRISC = 0xFF;
-//        if (PORTCbits.RC4 == 1) {
-//        }//check if button is pressed and start sending
-//        else {
-//            LATCbits.LATC3 = 1; //turn ON LED to indicate transmission
-//            TRISC = 0xBF; //set the PORT C PWM to o/p
-////            for (i = 0; i < n; i++) {
-////                sendPWM(&dummy_data[i]);
-////            }
-//            //start header pwm
-////            for(i=0;i<4;i++)sendPWM(&hdr_trl[i]);
-//            readPsrSnsr();
-////            sendFloat(&pressure);
-////            sendFloat(&temperature);                    
-//            //end trailer pwm
-////            for(i=0;i<4;i++)sendPWM(&hdr_trl[i]);
-//            //            send_pwm(&i); //make data and send one byte at a time.//sending dummy data now
-//            LATCbits.LATC3 = 0; //turn OFF LED to indicate end
-//            //            printf("%c", 'd'); //send data to UART to test at 1200 baud
-//        }
+        //        TRISC = 0xFF;
+        //        if (PORTCbits.RC4 == 1) {
+        //        }//check if button is pressed and start sending
+        //        else {
+        //            LATCbits.LATC3 = 1; //turn ON LED to indicate transmission
+        //            TRISC = 0xBF; //set the PORT C PWM to o/p
+        ////            for (i = 0; i < n; i++) {
+        ////                sendPWM(&dummy_data[i]);
+        ////            }
+        //            //start header pwm
+        ////            for(i=0;i<4;i++)sendPWM(&hdr_trl[i]);
+        //            readPsrSnsr();
+        ////            sendFloat(&pressure);
+        ////            sendFloat(&temperature);                    
+        //            //end trailer pwm
+        ////            for(i=0;i<4;i++)sendPWM(&hdr_trl[i]);
+        //            //            send_pwm(&i); //make data and send one byte at a time.//sending dummy data now
+        //            LATCbits.LATC3 = 0; //turn OFF LED to indicate end
+        //            //            printf("%c", 'd'); //send data to UART to test at 1200 baud
+        //        }
     }
 }
 /**

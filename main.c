@@ -53,6 +53,7 @@
 #define PRSR_L 0x28
 #define TMPR_H 0x2C
 #define TMPR_L 0x2B
+#define DATA_SIZE 9
 /*
  Global Variables
  */
@@ -61,6 +62,7 @@ uint16_t raw_temperature;
 uint8_t value;
 static float pressure;
 static float temperature;
+unsigned char packet[DATA_SIZE];
 
 /*
  
@@ -110,9 +112,11 @@ void readPressureSensor() {
     //read pressure registers
     raw_pressure = 0;
     raw_pressure = I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, PRSR_H);
+    packet[0] = raw_pressure;
     raw_pressure = (raw_pressure << 8) + I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, PRSR_M);
+    packet[1] = (0x0f & raw_pressure);
     raw_pressure = (raw_pressure << 8) + I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, PRSR_L);
-
+    packet[2] = (0x0f & raw_pressure);
     if (raw_pressure & 0x800000) {
         raw_pressure = (0xff000000 | raw_pressure);
     }
@@ -122,7 +126,9 @@ void readPressureSensor() {
     //read temperature registers
     raw_temperature = 0;
     raw_temperature = I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, TMPR_H);
+    packet[3] = (0x0f & raw_temperature);
     raw_temperature = (raw_temperature << 8) + I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, TMPR_L);
+    packet[4] = (0x0f & raw_temperature);
     temperature = (float) (raw_temperature) / 100.00;
 
     printf("Pressure : %f\n", pressure);
@@ -130,10 +136,10 @@ void readPressureSensor() {
 }
 
 void sendFloat(float * f) {
-    unsigned char **temp = (unsigned char**) &f;
-    sendPWM(*temp++);
-    sendPWM(*temp++);
-    sendPWM(*temp++);
+    unsigned char **temp = &f;
+    sendPWM((*temp)++);
+    sendPWM((*temp)++);
+    sendPWM((*temp)++);
     sendPWM(*temp);
 }
 
@@ -143,6 +149,8 @@ void sendFloat(float * f) {
 void main(void) {
     //initialize the variables
     char hdr_trl[] = {0xFF, 0x00, 0xFF, 0x00};
+    char SOC = 0x16;
+    char EOC = 0x17;
     // initialize the device
     SYSTEM_Initialize();
     setZero(); //shutdown the PWM
@@ -165,6 +173,10 @@ void main(void) {
     char dummy_data[] = {0xFF, 0x00, 0xFF, 0x00, 0x16, 'H', 'E', 'L', 'L', 'O', ' ', 'S', 'E', 'N', 'S', 'O', 'R', 'S', 0x17, 0xFF, 0x00, 0xFF, 0x00};
     uint8_t n = sizeof (dummy_data);
     uint8_t i = 0;
+    packet[5] = 'D';
+    packet[6] = 'A';
+    packet[7] = 'T';
+    packet[8] = 'A';
     while (1) {
         // Add your application code        
 
@@ -179,9 +191,25 @@ void main(void) {
             __delay_ms(500);
             LATCbits.LATC3 = 1; //turn ON LED to indicate transmission
             TRISC = 0xBF; //set the PORT C PWM to o/p
-            for (i = 0; i < n; i++) {
-                sendPWM(&dummy_data[i]);
+            /*DATA EXPERIMENTS START*/
+            
+//            for (i = 0; i < n; i++) {
+//                sendPWM(&dummy_data[i]);
+//            }
+            for(i=0;i<4;++i){
+                sendPWM(&hdr_trl[i]);
             }
+            sendPWM(&SOC);
+//            sendFloat(&pressure); 
+            for (i=0;i<9;++i){
+                sendPWM(&packet[i]);
+            }
+            sendPWM(&EOC);
+            for(i=0;i<4;++i){
+                sendPWM(&hdr_trl[i]);
+            }
+            /*DATA EXPERIMENTS END*/
+            
             LATCbits.LATC3 = 0; //turn OFF LED to indicate end
         }
     }

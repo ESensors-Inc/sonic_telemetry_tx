@@ -11783,12 +11783,13 @@ void I2C1_WriteNBytes(i2c1_address_t address, uint8_t *data, size_t len);
 void I2C1_ReadNBytes(i2c1_address_t address, uint8_t *data, size_t len);
 void I2C1_ReadDataBlock(i2c1_address_t address, uint8_t reg, uint8_t *data, size_t len);
 # 45 "main.c" 2
-# 59 "main.c"
+# 60 "main.c"
 uint32_t raw_pressure;
 uint16_t raw_temperature;
 uint8_t value;
 static float pressure;
 static float temperature;
+unsigned char packet[9];
 
 
 
@@ -11838,9 +11839,11 @@ void readPressureSensor() {
 
     raw_pressure = 0;
     raw_pressure = I2C1_Read1ByteRegister(0x5D, 0x2A);
+    packet[0] = raw_pressure;
     raw_pressure = (raw_pressure << 8) + I2C1_Read1ByteRegister(0x5D, 0x29);
+    packet[1] = (0x0f & raw_pressure);
     raw_pressure = (raw_pressure << 8) + I2C1_Read1ByteRegister(0x5D, 0x28);
-
+    packet[2] = (0x0f & raw_pressure);
     if (raw_pressure & 0x800000) {
         raw_pressure = (0xff000000 | raw_pressure);
     }
@@ -11850,7 +11853,9 @@ void readPressureSensor() {
 
     raw_temperature = 0;
     raw_temperature = I2C1_Read1ByteRegister(0x5D, 0x2C);
+    packet[3] = (0x0f & raw_temperature);
     raw_temperature = (raw_temperature << 8) + I2C1_Read1ByteRegister(0x5D, 0x2B);
+    packet[4] = (0x0f & raw_temperature);
     temperature = (float) (raw_temperature) / 100.00;
 
     printf("Pressure : %f\n", pressure);
@@ -11858,10 +11863,10 @@ void readPressureSensor() {
 }
 
 void sendFloat(float * f) {
-    unsigned char **temp = (unsigned char**) &f;
-    sendPWM(*temp++);
-    sendPWM(*temp++);
-    sendPWM(*temp++);
+    unsigned char **temp = &f;
+    sendPWM((*temp)++);
+    sendPWM((*temp)++);
+    sendPWM((*temp)++);
     sendPWM(*temp);
 }
 
@@ -11871,6 +11876,8 @@ void sendFloat(float * f) {
 void main(void) {
 
     char hdr_trl[] = {0xFF, 0x00, 0xFF, 0x00};
+    char SOC = 0x16;
+    char EOC = 0x17;
 
     SYSTEM_Initialize();
     setZero();
@@ -11893,6 +11900,10 @@ void main(void) {
     char dummy_data[] = {0xFF, 0x00, 0xFF, 0x00, 0x16, 'H', 'E', 'L', 'L', 'O', ' ', 'S', 'E', 'N', 'S', 'O', 'R', 'S', 0x17, 0xFF, 0x00, 0xFF, 0x00};
     uint8_t n = sizeof (dummy_data);
     uint8_t i = 0;
+    packet[5] = 'D';
+    packet[6] = 'A';
+    packet[7] = 'T';
+    packet[8] = 'A';
     while (1) {
 
 
@@ -11907,9 +11918,23 @@ void main(void) {
             _delay((unsigned long)((500)*(16000000/4000.0)));
             LATCbits.LATC3 = 1;
             TRISC = 0xBF;
-            for (i = 0; i < n; i++) {
-                sendPWM(&dummy_data[i]);
+
+
+
+
+            for(i=0;i<4;++i){
+                sendPWM(&hdr_trl[i]);
             }
+            sendPWM(&SOC);
+
+            for (i=0;i<9;++i){
+                sendPWM(&packet[i]);
+            }
+            sendPWM(&EOC);
+            for(i=0;i<4;++i){
+                sendPWM(&hdr_trl[i]);
+            }
+
             LATCbits.LATC3 = 0;
         }
     }

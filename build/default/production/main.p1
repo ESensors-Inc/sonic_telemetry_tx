@@ -1116,226 +1116,244 @@ Version 4.0 HI-TECH Software Intermediate Code
 "19974
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18346.h: 19974: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-"59 main.c
-[; ;main.c: 59: uint32_t raw_pressure;
+"60 main.c
+[; ;main.c: 60: uint32_t raw_pressure;
 [v _raw_pressure `ul ~T0 @X0 1 e ]
-"60
-[; ;main.c: 60: uint16_t raw_temperature;
-[v _raw_temperature `us ~T0 @X0 1 e ]
 "61
-[; ;main.c: 61: uint8_t value;
-[v _value `uc ~T0 @X0 1 e ]
+[; ;main.c: 61: uint16_t raw_temperature;
+[v _raw_temperature `us ~T0 @X0 1 e ]
 "62
-[; ;main.c: 62: static float pressure;
-[v _pressure `f ~T0 @X0 1 s ]
+[; ;main.c: 62: uint8_t value;
+[v _value `uc ~T0 @X0 1 e ]
 "63
-[; ;main.c: 63: static float temperature;
+[; ;main.c: 63: static float pressure;
+[v _pressure `f ~T0 @X0 1 s ]
+"64
+[; ;main.c: 64: static float temperature;
 [v _temperature `f ~T0 @X0 1 s ]
-"70
-[; ;main.c: 70: void setHigh() {
+"65
+[; ;main.c: 65: unsigned char packet[9];
+[v _packet `uc ~T0 @X0 -> 9 `i e ]
+"72
+[; ;main.c: 72: void setHigh() {
 [v _setHigh `(v ~T0 @X0 1 ef ]
 {
 [e :U _setHigh ]
 [f ]
-"72
-[; ;main.c: 72:     PWM5CON = 0x80;
-[e = _PWM5CON -> -> 128 `i `uc ]
-"73
-[; ;main.c: 73:     PR2 = 0x68;
-[e = _PR2 -> -> 104 `i `uc ]
 "74
-[; ;main.c: 74:     PWM5DCH = 0x34;
-[e = _PWM5DCH -> -> 52 `i `uc ]
+[; ;main.c: 74:     PWM5CON = 0x80;
+[e = _PWM5CON -> -> 128 `i `uc ]
+"75
+[; ;main.c: 75:     PR2 = 0x68;
+[e = _PR2 -> -> 104 `i `uc ]
 "76
-[; ;main.c: 76: }
+[; ;main.c: 76:     PWM5DCH = 0x34;
+[e = _PWM5DCH -> -> 52 `i `uc ]
+"78
+[; ;main.c: 78: }
 [e :UE 969 ]
 }
-"78
-[; ;main.c: 78: void setLow() {
+"80
+[; ;main.c: 80: void setLow() {
 [v _setLow `(v ~T0 @X0 1 ef ]
 {
 [e :U _setLow ]
 [f ]
-"80
-[; ;main.c: 80:     PWM5CON = 0x80;
-[e = _PWM5CON -> -> 128 `i `uc ]
-"81
-[; ;main.c: 81:     PR2 = 0x74;
-[e = _PR2 -> -> 116 `i `uc ]
 "82
-[; ;main.c: 82:     PWM5DCH = 0x3A;
-[e = _PWM5DCH -> -> 58 `i `uc ]
+[; ;main.c: 82:     PWM5CON = 0x80;
+[e = _PWM5CON -> -> 128 `i `uc ]
 "83
-[; ;main.c: 83: }
+[; ;main.c: 83:     PR2 = 0x74;
+[e = _PR2 -> -> 116 `i `uc ]
+"84
+[; ;main.c: 84:     PWM5DCH = 0x3A;
+[e = _PWM5DCH -> -> 58 `i `uc ]
+"85
+[; ;main.c: 85: }
 [e :UE 970 ]
 }
-"85
-[; ;main.c: 85: void setZero() {
+"87
+[; ;main.c: 87: void setZero() {
 [v _setZero `(v ~T0 @X0 1 ef ]
 {
 [e :U _setZero ]
 [f ]
-"87
-[; ;main.c: 87:     PWM5CON = 0x00;
+"89
+[; ;main.c: 89:     PWM5CON = 0x00;
 [e = _PWM5CON -> -> 0 `i `uc ]
-"88
-[; ;main.c: 88: }
+"90
+[; ;main.c: 90: }
 [e :UE 971 ]
 }
-"90
-[; ;main.c: 90: _Bool sendPWM(uint8_t *data) {
+"92
+[; ;main.c: 92: _Bool sendPWM(uint8_t *data) {
 [v _sendPWM `(a ~T0 @X0 1 ef1`*uc ]
 {
 [e :U _sendPWM ]
 [v _data `*uc ~T0 @X0 1 r1 ]
 [f ]
-"91
-[; ;main.c: 91:     uint8_t j = 0;
+"93
+[; ;main.c: 93:     uint8_t j = 0;
 [v _j `uc ~T0 @X0 1 a ]
 [e = _j -> -> 0 `i `uc ]
-"93
-[; ;main.c: 93:     setLow();
+"95
+[; ;main.c: 95:     setLow();
 [e ( _setLow ..  ]
-"94
-[; ;main.c: 94:     _delay((unsigned long)((13.3333333333)*(16000000/4000.0)));
-[e ( __delay (1 -> * .13.3333333333 / -> -> 16000000 `l `d .4000.0 `ul ]
 "96
-[; ;main.c: 96:     for (j = 0; j < 8; j++) {
+[; ;main.c: 96:     _delay((unsigned long)((13.3333333333)*(16000000/4000.0)));
+[e ( __delay (1 -> * .13.3333333333 / -> -> 16000000 `l `d .4000.0 `ul ]
+"98
+[; ;main.c: 98:     for (j = 0; j < 8; j++) {
 {
 [e = _j -> -> 0 `i `uc ]
 [e $ < -> _j `i -> 8 `i 973  ]
 [e $U 974  ]
 [e :U 973 ]
 {
-"97
-[; ;main.c: 97:         (!!((*data >> j)&0x01)) ? setHigh() : setLow();
-[e ? ! ! != & >> -> *U _data `i -> _j `i -> 1 `i -> 0 `i : ( _setHigh ..  ( _setLow ..  ]
-"98
-[; ;main.c: 98:         _delay((unsigned long)((13.3333333333)*(16000000/4000.0)));
-[e ( __delay (1 -> * .13.3333333333 / -> -> 16000000 `l `d .4000.0 `ul ]
 "99
-[; ;main.c: 99:     }
+[; ;main.c: 99:         (!!((*data >> j)&0x01)) ? setHigh() : setLow();
+[e ? ! ! != & >> -> *U _data `i -> _j `i -> 1 `i -> 0 `i : ( _setHigh ..  ( _setLow ..  ]
+"100
+[; ;main.c: 100:         _delay((unsigned long)((13.3333333333)*(16000000/4000.0)));
+[e ( __delay (1 -> * .13.3333333333 / -> -> 16000000 `l `d .4000.0 `ul ]
+"101
+[; ;main.c: 101:     }
 }
 [e ++ _j -> -> 1 `i `uc ]
 [e $ < -> _j `i -> 8 `i 973  ]
 [e :U 974 ]
 }
-"101
-[; ;main.c: 101:     setHigh();
-[e ( _setHigh ..  ]
-"102
-[; ;main.c: 102:     _delay((unsigned long)((13.3333333333)*(16000000/4000.0)));
-[e ( __delay (1 -> * .13.3333333333 / -> -> 16000000 `l `d .4000.0 `ul ]
 "103
-[; ;main.c: 103:     if (*data == 0)return 1;
+[; ;main.c: 103:     setHigh();
+[e ( _setHigh ..  ]
+"104
+[; ;main.c: 104:     _delay((unsigned long)((13.3333333333)*(16000000/4000.0)));
+[e ( __delay (1 -> * .13.3333333333 / -> -> 16000000 `l `d .4000.0 `ul ]
+"105
+[; ;main.c: 105:     if (*data == 0)return 1;
 [e $ ! == -> *U _data `i -> 0 `i 976  ]
 [e ) -> -> 1 `i `a ]
 [e $UE 972  ]
 [e :U 976 ]
-"104
-[; ;main.c: 104:     return 0;
+"106
+[; ;main.c: 106:     return 0;
 [e ) -> -> 0 `i `a ]
 [e $UE 972  ]
-"106
-[; ;main.c: 106: }
+"108
+[; ;main.c: 108: }
 [e :UE 972 ]
 }
-"108
-[; ;main.c: 108: void readPressureSensor() {
+"110
+[; ;main.c: 110: void readPressureSensor() {
 [v _readPressureSensor `(v ~T0 @X0 1 ef ]
 {
 [e :U _readPressureSensor ]
 [f ]
-"111
-[; ;main.c: 111:     raw_pressure = 0;
-[e = _raw_pressure -> -> -> 0 `i `l `ul ]
-"112
-[; ;main.c: 112:     raw_pressure = I2C1_Read1ByteRegister(0x5D, 0x2A);
-[e = _raw_pressure -> ( _I2C1_Read1ByteRegister (2 , -> -> 93 `i `uc -> -> 42 `i `uc `ul ]
 "113
-[; ;main.c: 113:     raw_pressure = (raw_pressure << 8) + I2C1_Read1ByteRegister(0x5D, 0x29);
-[e = _raw_pressure + << _raw_pressure -> 8 `i -> ( _I2C1_Read1ByteRegister (2 , -> -> 93 `i `uc -> -> 41 `i `uc `ul ]
+[; ;main.c: 113:     raw_pressure = 0;
+[e = _raw_pressure -> -> -> 0 `i `l `ul ]
 "114
-[; ;main.c: 114:     raw_pressure = (raw_pressure << 8) + I2C1_Read1ByteRegister(0x5D, 0x28);
-[e = _raw_pressure + << _raw_pressure -> 8 `i -> ( _I2C1_Read1ByteRegister (2 , -> -> 93 `i `uc -> -> 40 `i `uc `ul ]
+[; ;main.c: 114:     raw_pressure = I2C1_Read1ByteRegister(0x5D, 0x2A);
+[e = _raw_pressure -> ( _I2C1_Read1ByteRegister (2 , -> -> 93 `i `uc -> -> 42 `i `uc `ul ]
+"115
+[; ;main.c: 115:     packet[0] = raw_pressure;
+[e = *U + &U _packet * -> -> -> 0 `i `ui `ux -> -> # *U &U _packet `ui `ux -> _raw_pressure `uc ]
 "116
-[; ;main.c: 116:     if (raw_pressure & 0x800000) {
+[; ;main.c: 116:     raw_pressure = (raw_pressure << 8) + I2C1_Read1ByteRegister(0x5D, 0x29);
+[e = _raw_pressure + << _raw_pressure -> 8 `i -> ( _I2C1_Read1ByteRegister (2 , -> -> 93 `i `uc -> -> 41 `i `uc `ul ]
+"117
+[; ;main.c: 117:     packet[1] = (0x0f & raw_pressure);
+[e = *U + &U _packet * -> -> -> 1 `i `ui `ux -> -> # *U &U _packet `ui `ux -> & -> -> -> 15 `i `l `ul _raw_pressure `uc ]
+"118
+[; ;main.c: 118:     raw_pressure = (raw_pressure << 8) + I2C1_Read1ByteRegister(0x5D, 0x28);
+[e = _raw_pressure + << _raw_pressure -> 8 `i -> ( _I2C1_Read1ByteRegister (2 , -> -> 93 `i `uc -> -> 40 `i `uc `ul ]
+"119
+[; ;main.c: 119:     packet[2] = (0x0f & raw_pressure);
+[e = *U + &U _packet * -> -> -> 2 `i `ui `ux -> -> # *U &U _packet `ui `ux -> & -> -> -> 15 `i `l `ul _raw_pressure `uc ]
+"120
+[; ;main.c: 120:     if (raw_pressure & 0x800000) {
 [e $ ! != & _raw_pressure -> -> 8388608 `l `ul -> -> -> 0 `i `l `ul 978  ]
 {
-"117
-[; ;main.c: 117:         raw_pressure = (0xff000000 | raw_pressure);
+"121
+[; ;main.c: 121:         raw_pressure = (0xff000000 | raw_pressure);
 [e = _raw_pressure | -> 4278190080 `ul _raw_pressure ]
-"118
-[; ;main.c: 118:     }
+"122
+[; ;main.c: 122:     }
 }
 [e :U 978 ]
-"119
-[; ;main.c: 119:     pressure = (float) (raw_pressure) / 4096.0;
-[e = _pressure -> / -> -> _raw_pressure `f `d .4096.0 `f ]
-"120
-[; ;main.c: 120:     _delay((unsigned long)((500)*(16000000/4000.0)));
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
 "123
-[; ;main.c: 123:     raw_temperature = 0;
-[e = _raw_temperature -> -> 0 `i `us ]
+[; ;main.c: 123:     pressure = (float) (raw_pressure) / 4096.0;
+[e = _pressure -> / -> -> _raw_pressure `f `d .4096.0 `f ]
 "124
-[; ;main.c: 124:     raw_temperature = I2C1_Read1ByteRegister(0x5D, 0x2C);
-[e = _raw_temperature -> ( _I2C1_Read1ByteRegister (2 , -> -> 93 `i `uc -> -> 44 `i `uc `us ]
-"125
-[; ;main.c: 125:     raw_temperature = (raw_temperature << 8) + I2C1_Read1ByteRegister(0x5D, 0x2B);
-[e = _raw_temperature -> + << -> _raw_temperature `ui -> 8 `i -> ( _I2C1_Read1ByteRegister (2 , -> -> 93 `i `uc -> -> 43 `i `uc `ui `us ]
-"126
-[; ;main.c: 126:     temperature = (float) (raw_temperature) / 100.00;
-[e = _temperature -> / -> -> _raw_temperature `f `d .100.00 `f ]
+[; ;main.c: 124:     _delay((unsigned long)((500)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"127
+[; ;main.c: 127:     raw_temperature = 0;
+[e = _raw_temperature -> -> 0 `i `us ]
 "128
-[; ;main.c: 128:     printf("Pressure : %f\n", pressure);
-[e ( _printf , (. :s 1C -> _pressure `d ]
+[; ;main.c: 128:     raw_temperature = I2C1_Read1ByteRegister(0x5D, 0x2C);
+[e = _raw_temperature -> ( _I2C1_Read1ByteRegister (2 , -> -> 93 `i `uc -> -> 44 `i `uc `us ]
 "129
-[; ;main.c: 129:     printf("Temperature : %f\n", temperature);
-[e ( _printf , (. :s 2C -> _temperature `d ]
+[; ;main.c: 129:     packet[3] = (0x0f & raw_temperature);
+[e = *U + &U _packet * -> -> -> 3 `i `ui `ux -> -> # *U &U _packet `ui `ux -> & -> -> 15 `i `ui -> _raw_temperature `ui `uc ]
 "130
-[; ;main.c: 130: }
+[; ;main.c: 130:     raw_temperature = (raw_temperature << 8) + I2C1_Read1ByteRegister(0x5D, 0x2B);
+[e = _raw_temperature -> + << -> _raw_temperature `ui -> 8 `i -> ( _I2C1_Read1ByteRegister (2 , -> -> 93 `i `uc -> -> 43 `i `uc `ui `us ]
+"131
+[; ;main.c: 131:     packet[4] = (0x0f & raw_temperature);
+[e = *U + &U _packet * -> -> -> 4 `i `ui `ux -> -> # *U &U _packet `ui `ux -> & -> -> 15 `i `ui -> _raw_temperature `ui `uc ]
+"132
+[; ;main.c: 132:     temperature = (float) (raw_temperature) / 100.00;
+[e = _temperature -> / -> -> _raw_temperature `f `d .100.00 `f ]
+"134
+[; ;main.c: 134:     printf("Pressure : %f\n", pressure);
+[e ( _printf , (. :s 1C -> _pressure `d ]
+"135
+[; ;main.c: 135:     printf("Temperature : %f\n", temperature);
+[e ( _printf , (. :s 2C -> _temperature `d ]
+"136
+[; ;main.c: 136: }
 [e :UE 977 ]
 }
-"132
-[; ;main.c: 132: void sendFloat(float * f) {
+"138
+[; ;main.c: 138: void sendFloat(float * f) {
 [v _sendFloat `(v ~T0 @X0 1 ef1`*f ]
 {
 [e :U _sendFloat ]
 [v _f `*f ~T0 @X0 1 r1 ]
 [f ]
-"133
-[; ;main.c: 133:     unsigned char **temp = (unsigned char**) &f;
+"139
+[; ;main.c: 139:     unsigned char **temp = &f;
 [v _temp `**uc ~T0 @X0 1 a ]
 [e = _temp -> &U _f `**uc ]
-"134
-[; ;main.c: 134:     sendPWM(*temp++);
-[e ( _sendPWM (1 *U ++ _temp * -> -> 1 `i `x -> -> # *U _temp `i `x ]
-"135
-[; ;main.c: 135:     sendPWM(*temp++);
-[e ( _sendPWM (1 *U ++ _temp * -> -> 1 `i `x -> -> # *U _temp `i `x ]
-"136
-[; ;main.c: 136:     sendPWM(*temp++);
-[e ( _sendPWM (1 *U ++ _temp * -> -> 1 `i `x -> -> # *U _temp `i `x ]
-"137
-[; ;main.c: 137:     sendPWM(*temp);
+"140
+[; ;main.c: 140:     sendPWM((*temp)++);
+[e ( _sendPWM (1 ++ *U _temp * -> -> 1 `i `x -> -> # *U *U _temp `i `x ]
+"141
+[; ;main.c: 141:     sendPWM((*temp)++);
+[e ( _sendPWM (1 ++ *U _temp * -> -> 1 `i `x -> -> # *U *U _temp `i `x ]
+"142
+[; ;main.c: 142:     sendPWM((*temp)++);
+[e ( _sendPWM (1 ++ *U _temp * -> -> 1 `i `x -> -> # *U *U _temp `i `x ]
+"143
+[; ;main.c: 143:     sendPWM(*temp);
 [e ( _sendPWM (1 *U _temp ]
-"138
-[; ;main.c: 138: }
+"144
+[; ;main.c: 144: }
 [e :UE 979 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"143
-[; ;main.c: 143: void main(void) {
+"149
+[; ;main.c: 149: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-[v F7270 `uc ~T0 @X0 -> 4 `i s ]
-[i F7270
+[v F7271 `uc ~T0 @X0 -> 4 `i s ]
+[i F7271
 :U ..
-"145
-[; ;main.c: 145:     char hdr_trl[] = {0xFF, 0x00, 0xFF, 0x00};
+"151
+[; ;main.c: 151:     char hdr_trl[] = {0xFF, 0x00, 0xFF, 0x00};
 -> -> 255 `i `uc
 -> -> 0 `i `uc
 -> -> 255 `i `uc
@@ -1343,30 +1361,38 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _hdr_trl `uc ~T0 @X0 -> 4 `i a ]
-[e = _hdr_trl F7270 ]
-"147
-[; ;main.c: 147:     SYSTEM_Initialize();
-[e ( _SYSTEM_Initialize ..  ]
-"148
-[; ;main.c: 148:     setZero();
-[e ( _setZero ..  ]
-"149
-[; ;main.c: 149:     pressure = 1013.134;
-[e = _pressure -> .1013.134 `f ]
-"150
-[; ;main.c: 150:     temperature = 24.76;
-[e = _temperature -> .24.76 `f ]
+[e = _hdr_trl F7271 ]
+"152
+[; ;main.c: 152:     char SOC = 0x16;
+[v _SOC `uc ~T0 @X0 1 a ]
+[e = _SOC -> -> 22 `i `uc ]
+"153
+[; ;main.c: 153:     char EOC = 0x17;
+[v _EOC `uc ~T0 @X0 1 a ]
+[e = _EOC -> -> 23 `i `uc ]
 "155
-[; ;main.c: 155:     (INTCONbits.GIE = 1);
-[e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
+[; ;main.c: 155:     SYSTEM_Initialize();
+[e ( _SYSTEM_Initialize ..  ]
+"156
+[; ;main.c: 156:     setZero();
+[e ( _setZero ..  ]
+"157
+[; ;main.c: 157:     pressure = 1013.134;
+[e = _pressure -> .1013.134 `f ]
 "158
-[; ;main.c: 158:     (INTCONbits.PEIE = 1);
+[; ;main.c: 158:     temperature = 24.76;
+[e = _temperature -> .24.76 `f ]
+"163
+[; ;main.c: 163:     (INTCONbits.GIE = 1);
+[e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
+"166
+[; ;main.c: 166:     (INTCONbits.PEIE = 1);
 [e = . . _INTCONbits 0 2 -> -> 1 `i `uc ]
-[v F7272 `uc ~T0 @X0 -> 23 `i s ]
-[i F7272
+[v F7275 `uc ~T0 @X0 -> 23 `i s ]
+[i F7275
 :U ..
-"165
-[; ;main.c: 165:     char dummy_data[] = {0xFF, 0x00, 0xFF, 0x00, 0x16, 'H', 'E', 'L', 'L', 'O', ' ', 'S', 'E', 'N', 'S', 'O', 'R', 'S', 0x17, 0xFF, 0x00, 0xFF, 0x00};
+"173
+[; ;main.c: 173:     char dummy_data[] = {0xFF, 0x00, 0xFF, 0x00, 0x16, 'H', 'E', 'L', 'L', 'O', ' ', 'S', 'E', 'N', 'S', 'O', 'R', 'S', 0x17, 0xFF, 0x00, 0xFF, 0x00};
 -> -> 255 `i `uc
 -> -> 0 `i `uc
 -> -> 255 `i `uc
@@ -1393,79 +1419,133 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _dummy_data `uc ~T0 @X0 -> 23 `i a ]
-[e = _dummy_data F7272 ]
-"166
-[; ;main.c: 166:     uint8_t n = sizeof (dummy_data);
+[e = _dummy_data F7275 ]
+"174
+[; ;main.c: 174:     uint8_t n = sizeof (dummy_data);
 [v _n `uc ~T0 @X0 1 a ]
 [e = _n -> -> # _dummy_data `ui `uc ]
-"167
-[; ;main.c: 167:     uint8_t i = 0;
+"175
+[; ;main.c: 175:     uint8_t i = 0;
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
-"168
-[; ;main.c: 168:     while (1) {
+"176
+[; ;main.c: 176:     packet[5] = 'D';
+[e = *U + &U _packet * -> -> -> 5 `i `ui `ux -> -> # *U &U _packet `ui `ux -> -> 68 `ui `uc ]
+"177
+[; ;main.c: 177:     packet[6] = 'A';
+[e = *U + &U _packet * -> -> -> 6 `i `ui `ux -> -> # *U &U _packet `ui `ux -> -> 65 `ui `uc ]
+"178
+[; ;main.c: 178:     packet[7] = 'T';
+[e = *U + &U _packet * -> -> -> 7 `i `ui `ux -> -> # *U &U _packet `ui `ux -> -> 84 `ui `uc ]
+"179
+[; ;main.c: 179:     packet[8] = 'A';
+[e = *U + &U _packet * -> -> -> 8 `i `ui `ux -> -> # *U &U _packet `ui `ux -> -> 65 `ui `uc ]
+"180
+[; ;main.c: 180:     while (1) {
 [e :U 982 ]
 {
-"173
-[; ;main.c: 173:         TRISC = 0xFF;
+"185
+[; ;main.c: 185:         TRISC = 0xFF;
 [e = _TRISC -> -> 255 `i `uc ]
-"174
-[; ;main.c: 174:         if (PORTCbits.RC4 == 1) {
+"186
+[; ;main.c: 186:         if (PORTCbits.RC4 == 1) {
 [e $ ! == -> . . _PORTCbits 0 4 `i -> 1 `i 984  ]
 {
-"175
-[; ;main.c: 175:         }
+"187
+[; ;main.c: 187:         }
 }
 [e $U 985  ]
-"176
-[; ;main.c: 176:         else {
+"188
+[; ;main.c: 188:         else {
 [e :U 984 ]
 {
-"178
-[; ;main.c: 178:             readPressureSensor();
+"190
+[; ;main.c: 190:             readPressureSensor();
 [e ( _readPressureSensor ..  ]
-"179
-[; ;main.c: 179:             _delay((unsigned long)((500)*(16000000/4000.0)));
+"191
+[; ;main.c: 191:             _delay((unsigned long)((500)*(16000000/4000.0)));
 [e ( __delay (1 -> * -> -> 500 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-"180
-[; ;main.c: 180:             LATCbits.LATC3 = 1;
+"192
+[; ;main.c: 192:             LATCbits.LATC3 = 1;
 [e = . . _LATCbits 0 3 -> -> 1 `i `uc ]
-"181
-[; ;main.c: 181:             TRISC = 0xBF;
+"193
+[; ;main.c: 193:             TRISC = 0xBF;
 [e = _TRISC -> -> 191 `i `uc ]
-"182
-[; ;main.c: 182:             for (i = 0; i < n; i++) {
+"198
+[; ;main.c: 198:             for(i=0;i<4;++i){
 {
 [e = _i -> -> 0 `i `uc ]
-[e $U 989  ]
+[e $ < -> _i `i -> 4 `i 986  ]
+[e $U 987  ]
 [e :U 986 ]
 {
-"183
-[; ;main.c: 183:                 sendPWM(&dummy_data[i]);
-[e ( _sendPWM (1 -> &U *U + &U _dummy_data * -> _i `ux -> -> # *U &U _dummy_data `ui `ux `*uc ]
-"184
-[; ;main.c: 184:             }
+"199
+[; ;main.c: 199:                 sendPWM(&hdr_trl[i]);
+[e ( _sendPWM (1 -> &U *U + &U _hdr_trl * -> _i `ux -> -> # *U &U _hdr_trl `ui `ux `*uc ]
+"200
+[; ;main.c: 200:             }
 }
-[e ++ _i -> -> 1 `i `uc ]
-[e :U 989 ]
-[e $ < -> _i `i -> _n `i 986  ]
+[e =+ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 4 `i 986  ]
 [e :U 987 ]
 }
-"185
-[; ;main.c: 185:             LATCbits.LATC3 = 0;
+"201
+[; ;main.c: 201:             sendPWM(&SOC);
+[e ( _sendPWM (1 -> &U _SOC `*uc ]
+"203
+[; ;main.c: 203:             for (i=0;i<9;++i){
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 9 `i 989  ]
+[e $U 990  ]
+[e :U 989 ]
+{
+"204
+[; ;main.c: 204:                 sendPWM(&packet[i]);
+[e ( _sendPWM (1 &U *U + &U _packet * -> _i `ux -> -> # *U &U _packet `ui `ux ]
+"205
+[; ;main.c: 205:             }
+}
+[e =+ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 9 `i 989  ]
+[e :U 990 ]
+}
+"206
+[; ;main.c: 206:             sendPWM(&EOC);
+[e ( _sendPWM (1 -> &U _EOC `*uc ]
+"207
+[; ;main.c: 207:             for(i=0;i<4;++i){
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 4 `i 992  ]
+[e $U 993  ]
+[e :U 992 ]
+{
+"208
+[; ;main.c: 208:                 sendPWM(&hdr_trl[i]);
+[e ( _sendPWM (1 -> &U *U + &U _hdr_trl * -> _i `ux -> -> # *U &U _hdr_trl `ui `ux `*uc ]
+"209
+[; ;main.c: 209:             }
+}
+[e =+ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 4 `i 992  ]
+[e :U 993 ]
+}
+"211
+[; ;main.c: 211:             LATCbits.LATC3 = 0;
 [e = . . _LATCbits 0 3 -> -> 0 `i `uc ]
-"186
-[; ;main.c: 186:         }
+"212
+[; ;main.c: 212:         }
 }
 [e :U 985 ]
-"187
-[; ;main.c: 187:     }
+"213
+[; ;main.c: 213:     }
 }
 [e :U 981 ]
 [e $U 982  ]
 [e :U 983 ]
-"188
-[; ;main.c: 188: }
+"214
+[; ;main.c: 214: }
 [e :UE 980 ]
 }
 [p f _printf 8396800 ]

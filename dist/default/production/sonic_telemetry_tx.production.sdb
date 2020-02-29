@@ -288,18 +288,16 @@ I2C1_NULL 5
 "364 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f18346.h
 [u S489 . 1 `S484 1 . 1 0 ]
 [v _INTCONbits INTCONbits `VES489  1 e 1 @11 ]
-[s S1156 . 1 `uc 1 RC0 1 0 :1:0 
-`uc 1 RC1 1 0 :1:1 
-`uc 1 RC2 1 0 :1:2 
-`uc 1 RC3 1 0 :1:3 
-`uc 1 RC4 1 0 :1:4 
-`uc 1 RC5 1 0 :1:5 
-`uc 1 RC6 1 0 :1:6 
-`uc 1 RC7 1 0 :1:7 
+[s S1156 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
 ]
-"490
-[u S1165 . 1 `S1156 1 . 1 0 ]
-[v _PORTCbits PORTCbits `VES1165  1 e 1 @14 ]
+"399
+[u S1163 . 1 `S1156 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES1163  1 e 1 @12 ]
 [s S412 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 BCL1IF 1 0 :1:2 
@@ -355,22 +353,20 @@ I2C1_NULL 5
 [v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
 "2293
 [v _LATA LATA `VEuc  1 e 1 @268 ]
+[s S1173 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+]
+"2308
+[u S1180 . 1 `S1173 1 . 1 0 ]
+[v _LATAbits LATAbits `VES1180  1 e 1 @268 ]
 "2338
 [v _LATB LATB `VEuc  1 e 1 @269 ]
 "2377
 [v _LATC LATC `VEuc  1 e 1 @270 ]
-[s S1177 . 1 `uc 1 LATC0 1 0 :1:0 
-`uc 1 LATC1 1 0 :1:1 
-`uc 1 LATC2 1 0 :1:2 
-`uc 1 LATC3 1 0 :1:3 
-`uc 1 LATC4 1 0 :1:4 
-`uc 1 LATC5 1 0 :1:5 
-`uc 1 LATC6 1 0 :1:6 
-`uc 1 LATC7 1 0 :1:7 
-]
-"2394
-[u S1186 . 1 `S1177 1 . 1 0 ]
-[v _LATCbits LATCbits `VES1186  1 e 1 @270 ]
 "2932
 [v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
 "2977
@@ -534,8 +530,8 @@ I2C1_NULL 5
 [v _RXPPS RXPPS `VEuc  1 e 1 @3620 ]
 "14858
 [v _RB4PPS RB4PPS `VEuc  1 e 1 @3740 ]
-"14910
-[v _RB5PPS RB5PPS `VEuc  1 e 1 @3741 ]
+"14962
+[v _RB6PPS RB6PPS `VEuc  1 e 1 @3742 ]
 "15014
 [v _RB7PPS RB7PPS `VEuc  1 e 1 @3743 ]
 "15378
@@ -606,11 +602,11 @@ I2C1_NULL 5
 "149 C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"173
+"174
 [v main@dummy_data dummy_data `[23]uc  1 a 23 9 ]
 "151
 [v main@hdr_trl hdr_trl `[4]uc  1 a 4 32 ]
-"175
+"176
 [v main@i i `uc  1 a 1 39 ]
 "153
 [v main@EOC EOC `uc  1 a 1 38 ]
@@ -618,9 +614,9 @@ I2C1_NULL 5
 [v main@SOC SOC `uc  1 a 1 37 ]
 "149
 [v main@F7271 F7271 `[4]uc  1 s 4 F7271 ]
-"166
+"167
 [v main@F7275 F7275 `[23]uc  1 s 23 F7275 ]
-"214
+"218
 } 0
 "87
 [v _setZero setZero `(v  1 e 1 0 ]
@@ -665,36 +661,36 @@ I2C1_NULL 5
 "1368 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\doprnt.c
 [v _vfprintf vfprintf `(i  1 e 2 0 ]
 {
-[s S1411 _IO_FILE 0 ]
-[v vfprintf@fp fp `*.1S1411  1 a 1 wreg ]
+[s S1399 _IO_FILE 0 ]
+[v vfprintf@fp fp `*.1S1399  1 a 1 wreg ]
 "1371
 [v vfprintf@cfmt cfmt `*.25uc  1 a 2 63 ]
 "1368
-[v vfprintf@fp fp `*.1S1411  1 a 1 wreg ]
+[v vfprintf@fp fp `*.1S1399  1 a 1 wreg ]
 [v vfprintf@fmt fmt `*.25DCuc  1 p 2 57 ]
 [v vfprintf@ap ap `*.4*.4v  1 p 1 59 ]
 "1373
 "1368
-[v vfprintf@fp fp `*.1S1411  1 a 1 62 ]
+[v vfprintf@fp fp `*.1S1399  1 a 1 62 ]
 "1382
 } 0
 "670
 [v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
 {
-[s S1411 _IO_FILE 0 ]
-[v vfpfcnvrt@fp fp `*.1S1411  1 a 1 wreg ]
+[s S1399 _IO_FILE 0 ]
+[v vfpfcnvrt@fp fp `*.1S1399  1 a 1 wreg ]
 "676
 [v vfpfcnvrt@f f `d  1 a 4 74 ]
 "672
 [v vfpfcnvrt@ct ct `[3]uc  1 a 3 71 ]
 [v vfpfcnvrt@c c `uc  1 a 1 78 ]
 "670
-[v vfpfcnvrt@fp fp `*.1S1411  1 a 1 wreg ]
+[v vfpfcnvrt@fp fp `*.1S1399  1 a 1 wreg ]
 [v vfpfcnvrt@fmt fmt `*.4*.25uc  1 p 1 61 ]
 [v vfpfcnvrt@ap ap `*.4*.4v  1 p 1 62 ]
 "680
 "670
-[v vfpfcnvrt@fp fp `*.1S1411  1 a 1 79 ]
+[v vfpfcnvrt@fp fp `*.1S1399  1 a 1 79 ]
 "1365
 } 0
 "3 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\strncmp.c
@@ -715,8 +711,8 @@ I2C1_NULL 5
 "319 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\doprnt.c
 [v _efgtoa efgtoa `(i  1 s 2 efgtoa ]
 {
-[s S1411 _IO_FILE 0 ]
-[v efgtoa@fp fp `*.1S1411  1 a 1 wreg ]
+[s S1399 _IO_FILE 0 ]
+[v efgtoa@fp fp `*.1S1399  1 a 1 wreg ]
 "323
 [v efgtoa@u u `d  1 a 4 53 ]
 [v efgtoa@g g `d  1 a 4 45 ]
@@ -739,12 +735,12 @@ I2C1_NULL 5
 [v efgtoa@mode mode `uc  1 a 1 34 ]
 [v efgtoa@nmode nmode `uc  1 a 1 31 ]
 "319
-[v efgtoa@fp fp `*.1S1411  1 a 1 wreg ]
+[v efgtoa@fp fp `*.1S1399  1 a 1 wreg ]
 [v efgtoa@f f `d  1 p 4 52 ]
 [v efgtoa@c c `uc  1 p 1 56 ]
 "326
 "319
-[v efgtoa@fp fp `*.1S1411  1 a 1 28 ]
+[v efgtoa@fp fp `*.1S1399  1 a 1 28 ]
 "503
 } 0
 "4 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\tolower.c
@@ -777,18 +773,18 @@ I2C1_NULL 5
 "72 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\doprnt.c
 [v _pad pad `(i  1 s 2 pad ]
 {
-[s S1411 _IO_FILE 0 ]
-[v pad@fp fp `*.1S1411  1 a 1 wreg ]
+[s S1399 _IO_FILE 0 ]
+[v pad@fp fp `*.1S1399  1 a 1 wreg ]
 "74
 [v pad@w w `i  1 a 2 14 ]
 [v pad@i i `i  1 a 2 12 ]
 "72
-[v pad@fp fp `*.1S1411  1 a 1 wreg ]
+[v pad@fp fp `*.1S1399  1 a 1 wreg ]
 [v pad@buf buf `*.6uc  1 p 1 8 ]
 [v pad@p p `i  1 p 2 9 ]
 "77
 "72
-[v pad@fp fp `*.1S1411  1 a 1 16 ]
+[v pad@fp fp `*.1S1399  1 a 1 16 ]
 "95
 } 0
 "12 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\strlen.c
@@ -813,8 +809,8 @@ I2C1_NULL 5
 [v fputs@c c `uc  1 a 1 4 ]
 "8
 [v fputs@s s `*.6DCuc  1 a 1 wreg ]
-[s S1850 _IO_FILE 5 `*.1uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
-[v fputs@fp fp `*.1S1850  1 p 1 0 ]
+[s S1838 _IO_FILE 5 `*.1uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[v fputs@fp fp `*.1S1838  1 p 1 0 ]
 "13
 [v fputs@s s `*.6DCuc  1 a 1 7 ]
 "19
@@ -823,8 +819,8 @@ I2C1_NULL 5
 [v _fputc fputc `(i  1 e 2 0 ]
 {
 [v fputc@c c `i  1 p 2 4 ]
-[s S1850 _IO_FILE 5 `*.1uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
-[v fputc@fp fp `*.1S1850  1 p 1 6 ]
+[s S1838 _IO_FILE 5 `*.1uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[v fputc@fp fp `*.1S1838  1 p 1 6 ]
 "21
 } 0
 "201 C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
@@ -847,9 +843,9 @@ I2C1_NULL 5
 "3 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\floorf.c
 [v _floorf floorf `(f  1 e 4 0 ]
 {
-[u S1816 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+[u S1804 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
 "5
-[v floorf@u u `S1816  1 a 4 48 ]
+[v floorf@u u `S1804  1 a 4 48 ]
 "7
 [v floorf@m m `ul  1 a 4 42 ]
 "6
@@ -857,21 +853,21 @@ I2C1_NULL 5
 "3
 [v floorf@x x `f  1 p 4 32 ]
 "4
-[v floorf@F524 F524 `S1816  1 s 4 F524 ]
+[v floorf@F524 F524 `S1804  1 s 4 F524 ]
 "27
 } 0
 "4 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\__fpclassifyf.c
 [v ___fpclassifyf __fpclassifyf `(i  1 e 2 0 ]
 {
-[u S1816 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+[u S1804 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
 "6
-[v ___fpclassifyf@u u `S1816  1 a 4 2 ]
+[v ___fpclassifyf@u u `S1804  1 a 4 2 ]
 "7
 [v ___fpclassifyf@e e `i  1 a 2 0 ]
 "4
 [v ___fpclassifyf@x x `f  1 p 4 1 ]
 "5
-[v ___fpclassifyf@F463 F463 `S1816  1 s 4 F463 ]
+[v ___fpclassifyf@F463 F463 `S1804  1 s 4 F463 ]
 "11
 } 0
 "43 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\fltol.c
@@ -916,17 +912,17 @@ I2C1_NULL 5
 "8 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S1674 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S1662 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S1679 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
-[u S1682 . 4 `l 1 i 4 0 `d 1 f 4 0 `S1674 1 fAsBytes 4 0 `S1679 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S1682  1 a 4 20 ]
+[s S1667 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S1670 . 4 `l 1 i 4 0 `d 1 f 4 0 `S1662 1 fAsBytes 4 0 `S1667 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S1670  1 a 4 20 ]
 "12
 [v ___flmul@grs grs `ul  1 a 4 14 ]
-[s S1751 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[s S1739 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S1754 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S1751 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S1754  1 a 2 24 ]
+[u S1742 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S1739 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S1742  1 a 2 24 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 19 ]
 "11

@@ -5,8 +5,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "89 mcc_generated_files/i2c1_master.h
 [; ;mcc_generated_files/i2c1_master.h: 89: void I2C1_Initialize(void);
 [v _I2C1_Initialize `(v ~T0 @X0 0 ef ]
-"178 mcc_generated_files/pin_manager.h
-[; ;mcc_generated_files/pin_manager.h: 178: void PIN_MANAGER_Initialize (void);
+"218 mcc_generated_files/pin_manager.h
+[; ;mcc_generated_files/pin_manager.h: 218: void PIN_MANAGER_Initialize (void);
 [v _PIN_MANAGER_Initialize `(v ~T0 @X0 0 ef ]
 "87 mcc_generated_files/mcc.h
 [; ;mcc_generated_files/mcc.h: 87: void OSCILLATOR_Initialize(void);
@@ -14,12 +14,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "99
 [; ;mcc_generated_files/mcc.h: 99: void WDT_Initialize(void);
 [v _WDT_Initialize `(v ~T0 @X0 0 ef ]
-"102 mcc_generated_files/pwm5.h
-[; ;mcc_generated_files/pwm5.h: 102:  void PWM5_Initialize(void);
-[v _PWM5_Initialize `(v ~T0 @X0 0 ef ]
 "103 mcc_generated_files/tmr2.h
 [; ;mcc_generated_files/tmr2.h: 103: void TMR2_Initialize(void);
 [v _TMR2_Initialize `(v ~T0 @X0 0 ef ]
+"102 mcc_generated_files/pwm5.h
+[; ;mcc_generated_files/pwm5.h: 102:  void PWM5_Initialize(void);
+[v _PWM5_Initialize `(v ~T0 @X0 0 ef ]
 "118 mcc_generated_files/eusart.h
 [; ;mcc_generated_files/eusart.h: 118: void EUSART_Initialize(void);
 [v _EUSART_Initialize `(v ~T0 @X0 0 ef ]
@@ -1142,11 +1142,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/mcc.c: 57:     WDT_Initialize();
 [e ( _WDT_Initialize ..  ]
 "58
-[; ;mcc_generated_files/mcc.c: 58:     PWM5_Initialize();
-[e ( _PWM5_Initialize ..  ]
-"59
-[; ;mcc_generated_files/mcc.c: 59:     TMR2_Initialize();
+[; ;mcc_generated_files/mcc.c: 58:     TMR2_Initialize();
 [e ( _TMR2_Initialize ..  ]
+"59
+[; ;mcc_generated_files/mcc.c: 59:     PWM5_Initialize();
+[e ( _PWM5_Initialize ..  ]
 "60
 [; ;mcc_generated_files/mcc.c: 60:     EUSART_Initialize();
 [e ( _EUSART_Initialize ..  ]

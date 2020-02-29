@@ -11348,9 +11348,9 @@ extern __bank0 __bit __timeout;
 # 50 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 178 "./mcc_generated_files/pin_manager.h"
+# 218 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 190 "./mcc_generated_files/pin_manager.h"
+# 230 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "./mcc_generated_files/mcc.h" 2
 
@@ -11881,6 +11881,7 @@ void main(void) {
 
     SYSTEM_Initialize();
     setZero();
+
     pressure = 1013.134;
     temperature = 24.76;
 
@@ -11909,15 +11910,17 @@ void main(void) {
 
 
 
-        TRISC = 0xFF;
-        if (PORTCbits.RC4 == 1) {
+        TRISC = 0xDD;
+        if (PORTAbits.RA4 == 1) {
         }
         else {
 
             readPressureSensor();
             _delay((unsigned long)((500)*(16000000/4000.0)));
-            LATCbits.LATC3 = 1;
-            TRISC = 0xBF;
+            do { LATAbits.LATA2 = 1; } while(0);
+            TRISC = 0x9D;
+
+
 
 
 
@@ -11935,7 +11938,8 @@ void main(void) {
                 sendPWM(&hdr_trl[i]);
             }
 
-            LATCbits.LATC3 = 0;
+
+            do { LATAbits.LATA2 = 0; } while(0);
         }
     }
 }

@@ -18,20 +18,20 @@ text2 CODE 0 1204 1204 3D 2
 text3 CODE 0 1E38 1E38 A 2
 text4 CODE 0 1E2E 1E2E A 2
 text5 CODE 0 1689 1689 177 2
-text6 CODE 0 1002 1002 11 2
+text6 CODE 0 1001 1001 11 2
 text7 CODE 0 800 800 33 2
 text8 CODE 0 A59 A59 199 2
 text9 CODE 0 1359 1359 4E 2
 text10 CODE 0 5D 5D 694 2
-text11 CODE 0 1013 1013 22 2
+text11 CODE 0 1012 1012 22 2
 text12 CODE 0 1ED6 1ED6 17 2
 text13 CODE 0 1FC1 1FC1 1F 2
 text14 CODE 0 13A7 13A7 50 2
 text15 CODE 0 1F34 1F34 18 2
-text16 CODE 0 1059 1059 26 2
-text17 CODE 0 1195 1195 35 2
+text16 CODE 0 1058 1058 26 2
+text17 CODE 0 1194 1194 35 2
 text18 CODE 0 1DAF 1DAF 5 2
-text19 CODE 0 1035 1035 24 2
+text19 CODE 0 1034 1034 24 2
 text20 CODE 0 6F1 6F1 D8 2
 text21 CODE 0 14FF 14FF 78 2
 text22 CODE 0 149A 149A 65 2
@@ -46,7 +46,7 @@ text30 CODE 0 8DF 8DF 17A 2
 text31 CODE 0 1284 1284 45 2
 text32 CODE 0 13F7 13F7 51 2
 text33 CODE 0 15F3 15F3 96 2
-text34 CODE 0 112F 112F 32 2
+text34 CODE 0 112E 112E 32 2
 text35 CODE 0 1E65 1E65 C 2
 text36 CODE 0 7C9 7C9 37 2
 text37 CODE 0 1E42 1E42 B 2
@@ -54,8 +54,8 @@ text38 CODE 0 1D98 1D98 4 2
 text39 CODE 0 1F65 1F65 1E 2
 text40 CODE 0 1E24 1E24 A 2
 text41 CODE 0 1D94 1D94 4 2
-text42 CODE 0 10A7 10A7 2A 2
-text43 CODE 0 1100 1100 2F 2
+text42 CODE 0 10A6 10A6 2A 2
+text43 CODE 0 10FF 10FF 2F 2
 text44 CODE 0 1DAA 1DAA 5 2
 text45 CODE 0 1D90 1D90 4 2
 text46 CODE 0 1D8C 1D8C 4 2
@@ -70,7 +70,7 @@ text54 CODE 0 1448 1448 52 2
 text55 CODE 0 1DEA 1DEA 7 2
 text56 CODE 0 1E01 1E01 8 2
 text57 CODE 0 1DA5 1DA5 5 2
-text58 CODE 0 10D1 10D1 2F 2
+text58 CODE 0 10D0 10D0 2F 2
 text59 CODE 0 1D62 1D62 3 2
 text60 CODE 0 1DD2 1DD2 6 2
 text61 CODE 0 1DA0 1DA0 5 2
@@ -79,14 +79,14 @@ text63 CODE 0 1D5F 1D5F 3 2
 text64 CODE 0 1D70 1D70 4 2
 text65 CODE 0 1D5C 1D5C 3 2
 text66 CODE 0 2 2 2 2
-text67 CODE 0 1000 1000 2 2
+text67 CODE 0 1D45 1D45 2 2
 text68 CODE 0 1EBF 1EBF 17 2
 text69 CODE 0 1EAF 1EAF 10 2
 text70 CODE 0 1E9F 1E9F 10 2
 text71 CODE 0 1E8F 1E8F 10 2
 text72 CODE 0 1E7F 1E7F 10 2
 text73 CODE 0 1E59 1E59 C 2
-text74 CODE 0 107F 107F 28 2
+text74 CODE 0 107E 107E 28 2
 text75 CODE 0 1E71 1E71 E 2
 text76 CODE 0 1D59 1D59 3 2
 text77 CODE 0 1D56 1D56 3 2
@@ -100,7 +100,7 @@ text84 CODE 0 1D6C 1D6C 4 2
 text85 CODE 0 1DF9 1DF9 8 2
 text86 CODE 0 1E4D 1E4D C 2
 text87 CODE 0 1DF1 1DF1 8 2
-text88 CODE 0 11CA 11CA 3A 2
+text88 CODE 0 11C9 11C9 3B 2
 text89 CODE 0 1E12 1E12 9 2
 text90 CODE 0 1E09 1E09 9 2
 text91 CODE 0 1241 1241 43 2
@@ -110,7 +110,7 @@ text94 CODE 0 1DC0 1DC0 6 2
 text95 CODE 0 1DBA 1DBA 6 2
 text96 CODE 0 1DB4 1DB4 6 2
 text98 CODE 0 1FE0 1FE0 20 2
-text99 CODE 0 1161 1161 34 2
+text99 CODE 0 1160 1160 34 2
 nvBANK2 BANK2 1 16D 16D 3 1
 nvBANK3 BANK3 1 1D6 1D6 10 1
 maintext CODE 0 833 833 AC 2
@@ -138,11 +138,11 @@ dataBANK2 BANK2 1 169 169 4 1
 dataBANK5 BANK5 1 2A0 2A0 17 1
 clrtext CODE 0 1DDE 1DDE 6 2
 text100 CODE 0 1D68 1D68 4 2
-text101 CODE 0 1D46 1D46 1 2
+text101 CODE 0 1000 1000 1 2
 text102 CODE 0 1D47 1D47 3 2
 text103 CODE 0 1F04 1F04 18 2
 bssCOMMON COMMON 1 7C 7C 1 1
-$C:\Users\zameer\AppData\Local\Temp\s92s.o
+$C:\Users\zameer\AppData\Local\Temp\s2b0.o
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 23 23 2 2
 config CONFIG 0 8007 8007 4 2
@@ -180,9 +180,9 @@ BANK6 320-36F 1
 BANK7 3A0-3EF 1
 BANK8 420-46F 1
 BANK9 4A0-4EF 1
-CONST 1820-1D45 2
+CONST 1820-1D44 2
 CONST 2034-3FFF 2
-ENTRY 1820-1D45 2
+ENTRY 1820-1D44 2
 ENTRY 2034-3FFF 2
 IDLOC 8000-8003 2
 SFR10 500-51F 1
@@ -208,7 +208,7 @@ SFR29 E80-EEF 1
 SFR30 F00-F6F 1
 SFR31 F80-FEF 1
 STACK 21A7-27EF 1
-CODE 1820-1D45 2
+CODE 1820-1D44 2
 CODE 2034-3FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
@@ -239,9 +239,9 @@ BANK25 CA0-CBF 1
 BIGRAM 2000-27EF 1
 COMMON 7D-7D 1
 EEDATA F000-F0FF 2
-STRCODE 1820-1D45 2
+STRCODE 1820-1D44 2
 STRCODE 2034-3FFF 2
-STRING 1820-1D45 2
+STRING 1820-1D44 2
 STRING 2034-3FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -257,55 +257,55 @@ STRING 2034-3FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\sonic_telemetry_tx.production.o
-25 cinit CODE >7049:C:\Users\zameer\AppData\Local\Temp\s92s.
-25 cinit CODE >7052:C:\Users\zameer\AppData\Local\Temp\s92s.
-25 cinit CODE >7162:C:\Users\zameer\AppData\Local\Temp\s92s.
-26 cinit CODE >7163:C:\Users\zameer\AppData\Local\Temp\s92s.
-27 cinit CODE >7164:C:\Users\zameer\AppData\Local\Temp\s92s.
-28 cinit CODE >7165:C:\Users\zameer\AppData\Local\Temp\s92s.
-29 cinit CODE >7166:C:\Users\zameer\AppData\Local\Temp\s92s.
-2A cinit CODE >7167:C:\Users\zameer\AppData\Local\Temp\s92s.
-2B cinit CODE >7168:C:\Users\zameer\AppData\Local\Temp\s92s.
-2C cinit CODE >7169:C:\Users\zameer\AppData\Local\Temp\s92s.
-2D cinit CODE >7170:C:\Users\zameer\AppData\Local\Temp\s92s.
-2E cinit CODE >7171:C:\Users\zameer\AppData\Local\Temp\s92s.
-31 cinit CODE >7175:C:\Users\zameer\AppData\Local\Temp\s92s.
-32 cinit CODE >7176:C:\Users\zameer\AppData\Local\Temp\s92s.
-33 cinit CODE >7177:C:\Users\zameer\AppData\Local\Temp\s92s.
-34 cinit CODE >7178:C:\Users\zameer\AppData\Local\Temp\s92s.
-35 cinit CODE >7179:C:\Users\zameer\AppData\Local\Temp\s92s.
-36 cinit CODE >7180:C:\Users\zameer\AppData\Local\Temp\s92s.
-37 cinit CODE >7181:C:\Users\zameer\AppData\Local\Temp\s92s.
-38 cinit CODE >7182:C:\Users\zameer\AppData\Local\Temp\s92s.
-39 cinit CODE >7183:C:\Users\zameer\AppData\Local\Temp\s92s.
-3A cinit CODE >7184:C:\Users\zameer\AppData\Local\Temp\s92s.
-3D cinit CODE >7201:C:\Users\zameer\AppData\Local\Temp\s92s.
-3E cinit CODE >7205:C:\Users\zameer\AppData\Local\Temp\s92s.
-3F cinit CODE >7206:C:\Users\zameer\AppData\Local\Temp\s92s.
-40 cinit CODE >7207:C:\Users\zameer\AppData\Local\Temp\s92s.
-41 cinit CODE >7208:C:\Users\zameer\AppData\Local\Temp\s92s.
-42 cinit CODE >7212:C:\Users\zameer\AppData\Local\Temp\s92s.
-43 cinit CODE >7213:C:\Users\zameer\AppData\Local\Temp\s92s.
-44 cinit CODE >7214:C:\Users\zameer\AppData\Local\Temp\s92s.
-45 cinit CODE >7215:C:\Users\zameer\AppData\Local\Temp\s92s.
-46 cinit CODE >7216:C:\Users\zameer\AppData\Local\Temp\s92s.
-47 cinit CODE >7217:C:\Users\zameer\AppData\Local\Temp\s92s.
-4A cinit CODE >7221:C:\Users\zameer\AppData\Local\Temp\s92s.
-4B cinit CODE >7222:C:\Users\zameer\AppData\Local\Temp\s92s.
-4C cinit CODE >7223:C:\Users\zameer\AppData\Local\Temp\s92s.
-4D cinit CODE >7224:C:\Users\zameer\AppData\Local\Temp\s92s.
-4E cinit CODE >7225:C:\Users\zameer\AppData\Local\Temp\s92s.
-4F cinit CODE >7226:C:\Users\zameer\AppData\Local\Temp\s92s.
-52 cinit CODE >7230:C:\Users\zameer\AppData\Local\Temp\s92s.
-53 cinit CODE >7231:C:\Users\zameer\AppData\Local\Temp\s92s.
-54 cinit CODE >7232:C:\Users\zameer\AppData\Local\Temp\s92s.
-55 cinit CODE >7233:C:\Users\zameer\AppData\Local\Temp\s92s.
-56 cinit CODE >7234:C:\Users\zameer\AppData\Local\Temp\s92s.
-57 cinit CODE >7235:C:\Users\zameer\AppData\Local\Temp\s92s.
-59 cinit CODE >7241:C:\Users\zameer\AppData\Local\Temp\s92s.
-59 cinit CODE >7243:C:\Users\zameer\AppData\Local\Temp\s92s.
-5A cinit CODE >7244:C:\Users\zameer\AppData\Local\Temp\s92s.
-5B cinit CODE >7245:C:\Users\zameer\AppData\Local\Temp\s92s.
+25 cinit CODE >7049:C:\Users\zameer\AppData\Local\Temp\s2b0.
+25 cinit CODE >7052:C:\Users\zameer\AppData\Local\Temp\s2b0.
+25 cinit CODE >7162:C:\Users\zameer\AppData\Local\Temp\s2b0.
+26 cinit CODE >7163:C:\Users\zameer\AppData\Local\Temp\s2b0.
+27 cinit CODE >7164:C:\Users\zameer\AppData\Local\Temp\s2b0.
+28 cinit CODE >7165:C:\Users\zameer\AppData\Local\Temp\s2b0.
+29 cinit CODE >7166:C:\Users\zameer\AppData\Local\Temp\s2b0.
+2A cinit CODE >7167:C:\Users\zameer\AppData\Local\Temp\s2b0.
+2B cinit CODE >7168:C:\Users\zameer\AppData\Local\Temp\s2b0.
+2C cinit CODE >7169:C:\Users\zameer\AppData\Local\Temp\s2b0.
+2D cinit CODE >7170:C:\Users\zameer\AppData\Local\Temp\s2b0.
+2E cinit CODE >7171:C:\Users\zameer\AppData\Local\Temp\s2b0.
+31 cinit CODE >7175:C:\Users\zameer\AppData\Local\Temp\s2b0.
+32 cinit CODE >7176:C:\Users\zameer\AppData\Local\Temp\s2b0.
+33 cinit CODE >7177:C:\Users\zameer\AppData\Local\Temp\s2b0.
+34 cinit CODE >7178:C:\Users\zameer\AppData\Local\Temp\s2b0.
+35 cinit CODE >7179:C:\Users\zameer\AppData\Local\Temp\s2b0.
+36 cinit CODE >7180:C:\Users\zameer\AppData\Local\Temp\s2b0.
+37 cinit CODE >7181:C:\Users\zameer\AppData\Local\Temp\s2b0.
+38 cinit CODE >7182:C:\Users\zameer\AppData\Local\Temp\s2b0.
+39 cinit CODE >7183:C:\Users\zameer\AppData\Local\Temp\s2b0.
+3A cinit CODE >7184:C:\Users\zameer\AppData\Local\Temp\s2b0.
+3D cinit CODE >7201:C:\Users\zameer\AppData\Local\Temp\s2b0.
+3E cinit CODE >7205:C:\Users\zameer\AppData\Local\Temp\s2b0.
+3F cinit CODE >7206:C:\Users\zameer\AppData\Local\Temp\s2b0.
+40 cinit CODE >7207:C:\Users\zameer\AppData\Local\Temp\s2b0.
+41 cinit CODE >7208:C:\Users\zameer\AppData\Local\Temp\s2b0.
+42 cinit CODE >7212:C:\Users\zameer\AppData\Local\Temp\s2b0.
+43 cinit CODE >7213:C:\Users\zameer\AppData\Local\Temp\s2b0.
+44 cinit CODE >7214:C:\Users\zameer\AppData\Local\Temp\s2b0.
+45 cinit CODE >7215:C:\Users\zameer\AppData\Local\Temp\s2b0.
+46 cinit CODE >7216:C:\Users\zameer\AppData\Local\Temp\s2b0.
+47 cinit CODE >7217:C:\Users\zameer\AppData\Local\Temp\s2b0.
+4A cinit CODE >7221:C:\Users\zameer\AppData\Local\Temp\s2b0.
+4B cinit CODE >7222:C:\Users\zameer\AppData\Local\Temp\s2b0.
+4C cinit CODE >7223:C:\Users\zameer\AppData\Local\Temp\s2b0.
+4D cinit CODE >7224:C:\Users\zameer\AppData\Local\Temp\s2b0.
+4E cinit CODE >7225:C:\Users\zameer\AppData\Local\Temp\s2b0.
+4F cinit CODE >7226:C:\Users\zameer\AppData\Local\Temp\s2b0.
+52 cinit CODE >7230:C:\Users\zameer\AppData\Local\Temp\s2b0.
+53 cinit CODE >7231:C:\Users\zameer\AppData\Local\Temp\s2b0.
+54 cinit CODE >7232:C:\Users\zameer\AppData\Local\Temp\s2b0.
+55 cinit CODE >7233:C:\Users\zameer\AppData\Local\Temp\s2b0.
+56 cinit CODE >7234:C:\Users\zameer\AppData\Local\Temp\s2b0.
+57 cinit CODE >7235:C:\Users\zameer\AppData\Local\Temp\s2b0.
+59 cinit CODE >7241:C:\Users\zameer\AppData\Local\Temp\s2b0.
+59 cinit CODE >7243:C:\Users\zameer\AppData\Local\Temp\s2b0.
+5A cinit CODE >7244:C:\Users\zameer\AppData\Local\Temp\s2b0.
+5B cinit CODE >7245:C:\Users\zameer\AppData\Local\Temp\s2b0.
 4 intentry CODE >52:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/interrupt_manager.c
 6 intentry CODE >55:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/interrupt_manager.c
 8 intentry CODE >57:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/interrupt_manager.c
@@ -323,24 +323,24 @@ E intentry CODE >59:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_genera
 1D47 text102 CODE >269:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
 1D47 text102 CODE >270:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
 1D49 text102 CODE >271:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
-1D46 text101 CODE >259:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
+1000 text101 CODE >259:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
 1D68 text100 CODE >261:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
 1D68 text100 CODE >264:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
 1D6A text100 CODE >265:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
 1D6B text100 CODE >267:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
-1161 text99 CODE >225:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
-1161 text99 CODE >228:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
-1167 text99 CODE >230:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
-116A text99 CODE >231:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
-1170 text99 CODE >232:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
-1175 text99 CODE >235:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
-1178 text99 CODE >236:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
-117E text99 CODE >237:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
-1183 text99 CODE >240:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
-118B text99 CODE >241:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
-1191 text99 CODE >242:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
-1192 text99 CODE >243:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
-1194 text99 CODE >247:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
+1160 text99 CODE >225:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
+1160 text99 CODE >228:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
+1166 text99 CODE >230:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
+1169 text99 CODE >231:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
+116F text99 CODE >232:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
+1174 text99 CODE >235:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
+1177 text99 CODE >236:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
+117D text99 CODE >237:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
+1182 text99 CODE >240:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
+118A text99 CODE >241:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
+1190 text99 CODE >242:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
+1191 text99 CODE >243:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
+1193 text99 CODE >247:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
 1FE0 text98 CODE >206:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
 1FE0 text98 CODE >210:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
 1FE5 text98 CODE >212:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
@@ -402,17 +402,17 @@ E intentry CODE >59:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_genera
 1E17 text89 CODE >72:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/mcc.c
 1E19 text89 CODE >74:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/mcc.c
 1E1A text89 CODE >75:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/mcc.c
-11CA text88 CODE >55:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/pin_manager.c
-11CA text88 CODE >60:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/pin_manager.c
-11CC text88 CODE >61:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/pin_manager.c
-11CD text88 CODE >62:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/pin_manager.c
-11CE text88 CODE >67:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/pin_manager.c
-11D1 text88 CODE >68:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/pin_manager.c
-11D3 text88 CODE >69:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/pin_manager.c
-11D5 text88 CODE >74:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/pin_manager.c
-11D8 text88 CODE >75:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/pin_manager.c
-11DA text88 CODE >76:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/pin_manager.c
-11DC text88 CODE >81:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/pin_manager.c
+11C9 text88 CODE >55:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/pin_manager.c
+11C9 text88 CODE >60:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/pin_manager.c
+11CB text88 CODE >61:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/pin_manager.c
+11CC text88 CODE >62:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/pin_manager.c
+11CD text88 CODE >67:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/pin_manager.c
+11D0 text88 CODE >68:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/pin_manager.c
+11D2 text88 CODE >69:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/pin_manager.c
+11D4 text88 CODE >74:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/pin_manager.c
+11D7 text88 CODE >75:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/pin_manager.c
+11D9 text88 CODE >76:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/pin_manager.c
+11DB text88 CODE >81:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/pin_manager.c
 11DE text88 CODE >82:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/pin_manager.c
 11DF text88 CODE >83:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/pin_manager.c
 11E0 text88 CODE >88:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/pin_manager.c
@@ -500,14 +500,14 @@ E intentry CODE >59:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_genera
 1E79 text75 CODE >268:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
 1E7D text75 CODE >269:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
 1E7E text75 CODE >271:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-107F text74 CODE >298:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-1080 text74 CODE >300:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-1084 text74 CODE >302:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-108D text74 CODE >303:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-1096 text74 CODE >304:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-1097 text74 CODE >307:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-10A0 text74 CODE >308:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-10A6 text74 CODE >310:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+107E text74 CODE >298:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+107F text74 CODE >300:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+1083 text74 CODE >302:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+108C text74 CODE >303:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+1095 text74 CODE >304:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+1096 text74 CODE >307:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+109F text74 CODE >308:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+10A5 text74 CODE >310:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
 1E59 text73 CODE >273:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
 1E59 text73 CODE >275:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
 1E64 text73 CODE >276:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
@@ -536,9 +536,9 @@ E intentry CODE >59:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_genera
 1ECE text68 CODE >173:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/examples/i2c1_master_example.c
 1ED4 text68 CODE >174:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/examples/i2c1_master_example.c
 1ED5 text68 CODE >175:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/examples/i2c1_master_example.c
-1000 text67 CODE >520:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-1000 text67 CODE >522:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-1001 text67 CODE >523:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+1D45 text67 CODE >520:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+1D45 text67 CODE >522:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+1D46 text67 CODE >523:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
 2 text66 CODE >525:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
 2 text66 CODE >527:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
 3 text66 CODE >528:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
@@ -565,15 +565,15 @@ E intentry CODE >59:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_genera
 1D62 text59 CODE >645:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
 1D62 text59 CODE >647:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
 1D64 text59 CODE >648:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-10D1 text58 CODE >409:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-10D1 text58 CODE >411:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-10D3 text58 CODE >412:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-10D4 text58 CODE >416:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-10D7 text58 CODE >418:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-10D9 text58 CODE >419:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-10DB text58 CODE >422:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-10DE text58 CODE >423:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-10FF text58 CODE >424:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+10D0 text58 CODE >409:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+10D0 text58 CODE >411:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+10D2 text58 CODE >412:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+10D3 text58 CODE >416:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+10D6 text58 CODE >418:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+10D8 text58 CODE >419:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+10DA text58 CODE >422:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+10DD text58 CODE >423:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+10FE text58 CODE >424:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
 1DA5 text57 CODE >333:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
 1DA5 text57 CODE >335:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
 1DA7 text57 CODE >336:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
@@ -650,20 +650,20 @@ E intentry CODE >59:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_genera
 1DAC text44 CODE >497:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
 1DAD text44 CODE >498:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
 1DAE text44 CODE >499:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-1100 text43 CODE >500:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-1100 text43 CODE >502:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-1102 text43 CODE >503:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-1108 text43 CODE >504:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-1109 text43 CODE >508:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-110C text43 CODE >510:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-110F text43 CODE >511:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-112E text43 CODE >512:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-10A7 text42 CODE >321:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-10A7 text42 CODE >323:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-10AA text42 CODE >325:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-10B3 text42 CODE >327:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-10B9 text42 CODE >329:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-10D0 text42 CODE >330:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+10FF text43 CODE >500:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+10FF text43 CODE >502:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+1101 text43 CODE >503:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+1107 text43 CODE >504:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+1108 text43 CODE >508:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+110B text43 CODE >510:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+110E text43 CODE >511:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+112D text43 CODE >512:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+10A6 text42 CODE >321:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+10A6 text42 CODE >323:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+10A9 text42 CODE >325:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+10B2 text42 CODE >327:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+10B8 text42 CODE >329:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
+10CF text42 CODE >330:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
 1D94 text41 CODE >650:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
 1D94 text41 CODE >652:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
 1D94 text41 CODE >654:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
@@ -725,16 +725,16 @@ E intentry CODE >59:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_genera
 1E65 text35 CODE >283:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
 1E65 text35 CODE >285:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
 1E70 text35 CODE >286:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/i2c1_master.c
-112F text34 CODE >63:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/examples/i2c1_master_example.c
-1131 text34 CODE >65:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/examples/i2c1_master_example.c
-1132 text34 CODE >67:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/examples/i2c1_master_example.c
-113A text34 CODE >68:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/examples/i2c1_master_example.c
-1146 text34 CODE >69:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/examples/i2c1_master_example.c
-114E text34 CODE >70:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/examples/i2c1_master_example.c
-1155 text34 CODE >71:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/examples/i2c1_master_example.c
-1158 text34 CODE >72:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/examples/i2c1_master_example.c
-115E text34 CODE >74:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/examples/i2c1_master_example.c
-1160 text34 CODE >75:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/examples/i2c1_master_example.c
+112E text34 CODE >63:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/examples/i2c1_master_example.c
+1130 text34 CODE >65:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/examples/i2c1_master_example.c
+1131 text34 CODE >67:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/examples/i2c1_master_example.c
+1139 text34 CODE >68:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/examples/i2c1_master_example.c
+1145 text34 CODE >69:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/examples/i2c1_master_example.c
+114D text34 CODE >70:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/examples/i2c1_master_example.c
+1154 text34 CODE >71:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/examples/i2c1_master_example.c
+1157 text34 CODE >72:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/examples/i2c1_master_example.c
+115D text34 CODE >74:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/examples/i2c1_master_example.c
+115F text34 CODE >75:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/examples/i2c1_master_example.c
 15F3 text33 CODE >10:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\xxtofl.c
 15F5 text33 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\xxtofl.c
 15F9 text33 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\xxtofl.c
@@ -1176,35 +1176,35 @@ DD3 text24 CODE >237:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\
 7C0 text20 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\floorf.c
 7C0 text20 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\floorf.c
 7C8 text20 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\floorf.c
-1035 text19 CODE >173:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
-1036 text19 CODE >175:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
-103A text19 CODE >179:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
-103D text19 CODE >181:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
-1040 text19 CODE >182:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
-1041 text19 CODE >183:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
-1041 text19 CODE >185:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
-1042 text19 CODE >186:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
-104F text19 CODE >187:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
-1052 text19 CODE >189:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
-1053 text19 CODE >191:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
-1056 text19 CODE >193:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
-1058 text19 CODE >194:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
+1034 text19 CODE >173:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
+1035 text19 CODE >175:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
+1039 text19 CODE >179:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
+103C text19 CODE >181:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
+103F text19 CODE >182:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
+1040 text19 CODE >183:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
+1040 text19 CODE >185:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
+1041 text19 CODE >186:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
+104E text19 CODE >187:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
+1051 text19 CODE >189:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
+1052 text19 CODE >191:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
+1055 text19 CODE >193:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
+1057 text19 CODE >194:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
 1DAF text18 CODE >201:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
 1DB0 text18 CODE >203:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
 1DB3 text18 CODE >204:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\mcc_generated_files/eusart.c
-1195 text17 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\nf_fputc.c
-1195 text17 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\nf_fputc.c
-119A text17 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\nf_fputc.c
-119D text17 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\nf_fputc.c
-119E text17 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\nf_fputc.c
-11C1 text17 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\nf_fputc.c
-11C9 text17 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\nf_fputc.c
-1059 text16 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\nf_fputs.c
-105B text16 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\nf_fputs.c
-105D text16 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\nf_fputs.c
-106B text16 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\nf_fputs.c
-1079 text16 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\nf_fputs.c
-107E text16 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\nf_fputs.c
+1194 text17 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\nf_fputc.c
+1194 text17 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\nf_fputc.c
+1199 text17 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\nf_fputc.c
+119C text17 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\nf_fputc.c
+119D text17 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\nf_fputc.c
+11C0 text17 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\nf_fputc.c
+11C8 text17 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\nf_fputc.c
+1058 text16 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\nf_fputs.c
+105A text16 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\nf_fputs.c
+105C text16 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\nf_fputs.c
+106A text16 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\nf_fputs.c
+1078 text16 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\nf_fputs.c
+107D text16 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\nf_fputs.c
 1F34 text15 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\strlen.c
 1F35 text15 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\strlen.c
 1F39 text15 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\strlen.c
@@ -1233,8 +1233,8 @@ DD3 text24 CODE >237:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\
 1ED6 text12 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\isupper.c
 1ED6 text12 CODE >7:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\isupper.c
 1EEC text12 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\isupper.c
-1013 text11 CODE >4:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\tolower.c
-1013 text11 CODE >6:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\tolower.c
+1012 text11 CODE >4:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\tolower.c
+1012 text11 CODE >6:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\tolower.c
 5D text10 CODE >319:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\doprnt.c
 5F text10 CODE >326:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\doprnt.c
 61 text10 CODE >327:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\doprnt.c
@@ -1406,10 +1406,10 @@ BE8 text8 CODE >1363:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\
 829 text7 CODE >1375:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\doprnt.c
 82A text7 CODE >1378:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\doprnt.c
 832 text7 CODE >1382:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\doprnt.c
-1002 text6 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\printf.c
-1002 text6 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\printf.c
-1007 text6 CODE >10:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\printf.c
-1012 text6 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\printf.c
+1001 text6 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\printf.c
+1001 text6 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\printf.c
+1006 text6 CODE >10:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\printf.c
+1011 text6 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\printf.c
 1689 text5 CODE >110:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
 1689 text5 CODE >113:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
 1692 text5 CODE >114:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
@@ -1460,49 +1460,49 @@ BE8 text8 CODE >1363:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\
 842 maintext CODE >153:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
 848 maintext CODE >155:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
 84B maintext CODE >156:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
-84E maintext CODE >157:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
-857 maintext CODE >158:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
-85F maintext CODE >163:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
-860 maintext CODE >166:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
-861 maintext CODE >173:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
-870 maintext CODE >176:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
-875 maintext CODE >177:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
-87B maintext CODE >178:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
-881 maintext CODE >179:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
-887 maintext CODE >185:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
-88A maintext CODE >186:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
-88D maintext CODE >190:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
-890 maintext CODE >191:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
-89D maintext CODE >192:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
-89F maintext CODE >193:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
-8A2 maintext CODE >198:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
-8A4 maintext CODE >199:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
-8A9 maintext CODE >200:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
-8B3 maintext CODE >201:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
-8B7 maintext CODE >203:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
-8B9 maintext CODE >204:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
-8BE maintext CODE >205:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
-8C8 maintext CODE >206:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
-8CC maintext CODE >207:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
-8CE maintext CODE >208:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
-8D3 maintext CODE >209:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
-8DD maintext CODE >211:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
-1DDE clrtext CODE >7190:C:\Users\zameer\AppData\Local\Temp\s92s.
-1DDE clrtext CODE >7191:C:\Users\zameer\AppData\Local\Temp\s92s.
-1DDF clrtext CODE >7192:C:\Users\zameer\AppData\Local\Temp\s92s.
-1DDF clrtext CODE >7193:C:\Users\zameer\AppData\Local\Temp\s92s.
-1DE0 clrtext CODE >7194:C:\Users\zameer\AppData\Local\Temp\s92s.
-1DE1 clrtext CODE >7195:C:\Users\zameer\AppData\Local\Temp\s92s.
-1DE2 clrtext CODE >7196:C:\Users\zameer\AppData\Local\Temp\s92s.
-1DE3 clrtext CODE >7197:C:\Users\zameer\AppData\Local\Temp\s92s.
-1DE4 inittext CODE >7151:C:\Users\zameer\AppData\Local\Temp\s92s.
-1DE4 inittext CODE >7152:C:\Users\zameer\AppData\Local\Temp\s92s.
-1DE5 inittext CODE >7153:C:\Users\zameer\AppData\Local\Temp\s92s.
-1DE5 inittext CODE >7154:C:\Users\zameer\AppData\Local\Temp\s92s.
-1DE6 inittext CODE >7155:C:\Users\zameer\AppData\Local\Temp\s92s.
-1DE7 inittext CODE >7156:C:\Users\zameer\AppData\Local\Temp\s92s.
-1DE8 inittext CODE >7157:C:\Users\zameer\AppData\Local\Temp\s92s.
-1DE9 inittext CODE >7158:C:\Users\zameer\AppData\Local\Temp\s92s.
+84E maintext CODE >158:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
+857 maintext CODE >159:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
+85F maintext CODE >164:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
+860 maintext CODE >167:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
+861 maintext CODE >174:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
+870 maintext CODE >177:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
+875 maintext CODE >178:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
+87B maintext CODE >179:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
+881 maintext CODE >180:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
+887 maintext CODE >186:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
+88A maintext CODE >187:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
+88D maintext CODE >191:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
+890 maintext CODE >192:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
+89D maintext CODE >193:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
+89F maintext CODE >194:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
+8A2 maintext CODE >201:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
+8A4 maintext CODE >202:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
+8A9 maintext CODE >203:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
+8B3 maintext CODE >204:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
+8B7 maintext CODE >206:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
+8B9 maintext CODE >207:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
+8BE maintext CODE >208:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
+8C8 maintext CODE >209:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
+8CC maintext CODE >210:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
+8CE maintext CODE >211:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
+8D3 maintext CODE >212:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
+8DD maintext CODE >215:C:\Users\zameer\MPLABXProjects\sonic_telemetry_tx\main.c
+1DDE clrtext CODE >7190:C:\Users\zameer\AppData\Local\Temp\s2b0.
+1DDE clrtext CODE >7191:C:\Users\zameer\AppData\Local\Temp\s2b0.
+1DDF clrtext CODE >7192:C:\Users\zameer\AppData\Local\Temp\s2b0.
+1DDF clrtext CODE >7193:C:\Users\zameer\AppData\Local\Temp\s2b0.
+1DE0 clrtext CODE >7194:C:\Users\zameer\AppData\Local\Temp\s2b0.
+1DE1 clrtext CODE >7195:C:\Users\zameer\AppData\Local\Temp\s2b0.
+1DE2 clrtext CODE >7196:C:\Users\zameer\AppData\Local\Temp\s2b0.
+1DE3 clrtext CODE >7197:C:\Users\zameer\AppData\Local\Temp\s2b0.
+1DE4 inittext CODE >7151:C:\Users\zameer\AppData\Local\Temp\s2b0.
+1DE4 inittext CODE >7152:C:\Users\zameer\AppData\Local\Temp\s2b0.
+1DE5 inittext CODE >7153:C:\Users\zameer\AppData\Local\Temp\s2b0.
+1DE5 inittext CODE >7154:C:\Users\zameer\AppData\Local\Temp\s2b0.
+1DE6 inittext CODE >7155:C:\Users\zameer\AppData\Local\Temp\s2b0.
+1DE7 inittext CODE >7156:C:\Users\zameer\AppData\Local\Temp\s2b0.
+1DE8 inittext CODE >7157:C:\Users\zameer\AppData\Local\Temp\s2b0.
+1DE9 inittext CODE >7158:C:\Users\zameer\AppData\Local\Temp\s2b0.
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -1520,7 +1520,7 @@ ___awdiv@counter 76 0 COMMON 1 cstackCOMMON dist/default/production\sonic_teleme
 ___fpclassifyf@e 20 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
 ___fpclassifyf@u 22 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
 ___fpclassifyf@x 71 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.production.o
-__end_of_I2C1_SetCallback 214E 0 CODE 0 text74 dist/default/production\sonic_telemetry_tx.production.o
+__end_of_I2C1_SetCallback 214C 0 CODE 0 text74 dist/default/production\sonic_telemetry_tx.production.o
 __LdataBANK2 0 0 ABS 0 dataBANK2 -
 __LdataBANK5 0 0 ABS 0 dataBANK5 -
 _I2C1_Initialize 3C12 0 CODE 0 text90 dist/default/production\sonic_telemetry_tx.production.o
@@ -1566,7 +1566,7 @@ _TMR2 1D 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 _WPUA 20C 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 _WPUB 20D 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 _WPUC 20E 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
-___sp 0 0 STACK 2 stack C:\Users\zameer\AppData\Local\Temp\s92s.o
+___sp 0 0 STACK 2 stack C:\Users\zameer\AppData\Local\Temp\s2b0.o
 _dbuf 220 0 BANK4 1 bssBANK4 dist/default/production\sonic_telemetry_tx.production.o
 _main 1066 0 CODE 0 maintext dist/default/production\sonic_telemetry_tx.production.o
 _nout 158 0 BANK2 1 bssBANK2 dist/default/production\sonic_telemetry_tx.production.o
@@ -1575,13 +1575,13 @@ btemp 7E 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 pad@i 2C 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
 pad@p 29 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
 pad@w 2E 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
-start 46 0 CODE 0 init C:\Users\zameer\AppData\Local\Temp\s92s.o
+start 46 0 CODE 0 init C:\Users\zameer\AppData\Local\Temp\s2b0.o
 ___flmul@aexp 32 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
 ___flmul@bexp 33 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
 ___flmul@prod 34 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
 ___flmul@sign 2D 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
 ___flmul@temp 38 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
-_EUSART_Write 206A 0 CODE 0 text19 dist/default/production\sonic_telemetry_tx.production.o
+_EUSART_Write 2068 0 CODE 0 text19 dist/default/production\sonic_telemetry_tx.production.o
 __size_of___awdiv 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 __size_of___awmod 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 __size_of___fladd 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
@@ -1595,7 +1595,7 @@ I2C1_Close@returnValue 72 0 COMMON 1 cstackCOMMON dist/default/production\sonic_
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
 _I2C1_MasterSendAck 3AE8 0 CODE 0 text62 dist/default/production\sonic_telemetry_tx.production.o
 pad@fp 30 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
-_tolower 2026 0 CODE 0 text11 dist/default/production\sonic_telemetry_tx.production.o
+_tolower 2024 0 CODE 0 text11 dist/default/production\sonic_telemetry_tx.production.o
 __end_of_EUSART_SetFramingErrorHandler 3B80 0 CODE 0 text95 dist/default/production\sonic_telemetry_tx.production.o
 __CFG_DEBUG$OFF 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 __end_of_EUSART_SetOverrunErrorHandler 3B8C 0 CODE 0 text94 dist/default/production\sonic_telemetry_tx.production.o
@@ -1627,14 +1627,14 @@ __size_of_vfpfcnvrt 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.produ
 rd1RegCompleteHandler@ptr 7A 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.production.o
 __size_of_rd1RegCompleteHandler 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 __size_of_I2C1_MasterWaitForEvent 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\zameer\AppData\Local\Temp\s92s.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\zameer\AppData\Local\Temp\s92s.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\zameer\AppData\Local\Temp\s92s.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\zameer\AppData\Local\Temp\s92s.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\zameer\AppData\Local\Temp\s92s.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\zameer\AppData\Local\Temp\s92s.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\zameer\AppData\Local\Temp\s2b0.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\zameer\AppData\Local\Temp\s2b0.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\zameer\AppData\Local\Temp\s2b0.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\zameer\AppData\Local\Temp\s2b0.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\zameer\AppData\Local\Temp\s2b0.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\zameer\AppData\Local\Temp\s2b0.o
 __ptext100 3AD0 0 CODE 0 text100 dist/default/production\sonic_telemetry_tx.production.o
-__ptext101 3A8C 0 CODE 0 text101 dist/default/production\sonic_telemetry_tx.production.o
+__ptext101 2000 0 CODE 0 text101 dist/default/production\sonic_telemetry_tx.production.o
 __ptext102 3A8E 0 CODE 0 text102 dist/default/production\sonic_telemetry_tx.production.o
 __ptext103 3E08 0 CODE 0 text103 dist/default/production\sonic_telemetry_tx.production.o
 floorf@e 4E 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
@@ -1647,7 +1647,7 @@ __size_of_sendPWM 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.product
 ?_efgtoa 54 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
 __size_of_setHigh 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 __size_of_setZero 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
-__end_of_I2C1_DO_TX_EMPTY 2200 0 CODE 0 text58 dist/default/production\sonic_telemetry_tx.production.o
+__end_of_I2C1_DO_TX_EMPTY 21FE 0 CODE 0 text58 dist/default/production\sonic_telemetry_tx.production.o
 __size_of_I2C1_DO_SEND_RESTART_WRITE 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 __end_of_fsmStateTable 3040 0 STRCODE 0 stringtext1 dist/default/production\sonic_telemetry_tx.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
@@ -1656,7 +1656,7 @@ _I2C1_MasterGetRxData 3ABE 0 CODE 0 text63 dist/default/production\sonic_telemet
 __Hfunctab 0 0 ENTRY 0 functab -
 __size_of_I2C1_DO_RX_NACK_STOP 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 _RC1STAbits 19D 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
-_EUSART_DefaultFramingErrorHandler 3A8C 0 CODE 0 text101 dist/default/production\sonic_telemetry_tx.production.o
+_EUSART_DefaultFramingErrorHandler 2000 0 CODE 0 text101 dist/default/production\sonic_telemetry_tx.production.o
 _wr2RegCompleteHandler 3CFE 0 CODE 0 text72 dist/default/production\sonic_telemetry_tx.production.o
 _EUSART_DefaultOverrunErrorHandler 3AD0 0 CODE 0 text100 dist/default/production\sonic_telemetry_tx.production.o
 __end_of_PMD_Initialize 3BF2 0 CODE 0 text87 dist/default/production\sonic_telemetry_tx.production.o
@@ -1666,7 +1666,7 @@ __size_of_I2C1_DO_TX_EMPTY 0 0 ABS 0 - dist/default/production\sonic_telemetry_t
 __end_of_EUSART_Transmit_ISR 4000 0 CODE 0 text98 dist/default/production\sonic_telemetry_tx.production.o
 ___awdiv@sign 77 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.production.o
 __Hclrtext 0 0 ABS 0 clrtext -
-_I2C1_Read1ByteRegister 225E 0 CODE 0 text34 dist/default/production\sonic_telemetry_tx.production.o
+_I2C1_Read1ByteRegister 225C 0 CODE 0 text34 dist/default/production\sonic_telemetry_tx.production.o
 I2C1_Read1ByteRegister@reg 28 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
 _vfpfcnvrt 14B2 0 CODE 0 text8 dist/default/production\sonic_telemetry_tx.production.o
 _eusartTxBuffer 1C5 0 BANK3 1 bssBANK3 dist/default/production\sonic_telemetry_tx.production.o
@@ -1695,7 +1695,7 @@ __end_of___fleq 26B2 0 CODE 0 text29 dist/default/production\sonic_telemetry_tx.
 __end_of___flge 2BE6 0 CODE 0 text28 dist/default/production\sonic_telemetry_tx.production.o
 EUSART_SetRxInterruptHandler@interruptHandler 71 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.production.o
 __size_of_I2C1_MasterSetIrq 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
-__end_of_EUSART_Write 20B2 0 CODE 0 text19 dist/default/production\sonic_telemetry_tx.production.o
+__end_of_EUSART_Write 20B0 0 CODE 0 text19 dist/default/production\sonic_telemetry_tx.production.o
 main@EOC 146 0 BANK2 1 cstackBANK2 dist/default/production\sonic_telemetry_tx.production.o
 main@SOC 145 0 BANK2 1 cstackBANK2 dist/default/production\sonic_telemetry_tx.production.o
 __end_of_I2C1_MasterOpen 3C9A 0 CODE 0 text37 dist/default/production\sonic_telemetry_tx.production.o
@@ -1731,8 +1731,8 @@ _INLVLC 38E 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 I2C1_MasterSendTxData@data 71 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.production.o
 ?_strlen 71 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.production.o
 __Umul8_16@multiplicand 71 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.production.o
-___stackhi 27EF 0 ABS 0 - C:\Users\zameer\AppData\Local\Temp\s92s.o
-___stacklo 21A7 0 ABS 0 - C:\Users\zameer\AppData\Local\Temp\s92s.o
+___stackhi 27EF 0 ABS 0 - C:\Users\zameer\AppData\Local\Temp\s2b0.o
+___stacklo 21A7 0 ABS 0 - C:\Users\zameer\AppData\Local\Temp\s2b0.o
 __end_of_efgtoa DE2 0 CODE 0 text10 dist/default/production\sonic_telemetry_tx.production.o
 __size_of_strncmp 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 _EUSART_Initialize 2482 0 CODE 0 text91 dist/default/production\sonic_telemetry_tx.production.o
@@ -1753,7 +1753,7 @@ __size_of_I2C1_DO_SEND_STOP 0 0 ABS 0 - dist/default/production\sonic_telemetry_
 __size_of_I2C1_DO_SEND_ADR_READ 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 __size_of_TMR2_Initialize 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 _I2C1_DO_SEND_RESTART_READ 3AF0 0 CODE 0 text51 dist/default/production\sonic_telemetry_tx.production.o
-_PIN_MANAGER_Initialize 2394 0 CODE 0 text88 dist/default/production\sonic_telemetry_tx.production.o
+_PIN_MANAGER_Initialize 2392 0 CODE 0 text88 dist/default/production\sonic_telemetry_tx.production.o
 start_initialization 4A 0 CODE 0 cinit dist/default/production\sonic_telemetry_tx.production.o
 _ODCONA 28C 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 _ODCONB 28D 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
@@ -1779,7 +1779,7 @@ efgtoa@u D5 0 BANK1 1 cstackBANK1 dist/default/production\sonic_telemetry_tx.pro
 efgtoa@w C0 0 BANK1 1 cstackBANK1 dist/default/production\sonic_telemetry_tx.production.o
 EUSART_SetOverrunErrorHandler@interruptHandler 71 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.production.o
 _eusartRxBuffer 1BD 0 BANK3 1 bssBANK3 dist/default/production\sonic_telemetry_tx.production.o
-_tolower$1910 79 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.production.o
+_tolower$1898 79 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.production.o
 __end_of_EUSART_DefaultErrorHandler 3A94 0 CODE 0 text102 dist/default/production\sonic_telemetry_tx.production.o
 _I2C1_DO_SEND_ADR_WRITE 3BD4 0 CODE 0 text55 dist/default/production\sonic_telemetry_tx.production.o
 _EUSART_RxDataHandler 3E08 0 CODE 0 text103 dist/default/production\sonic_telemetry_tx.production.o
@@ -1787,7 +1787,7 @@ __size_of_I2C1_CallbackReturnReset 0 0 ABS 0 - dist/default/production\sonic_tel
 efgtoa@mode C2 0 BANK1 1 cstackBANK1 dist/default/production\sonic_telemetry_tx.production.o
 efgtoa@sign BA 0 BANK1 1 cstackBANK1 dist/default/production\sonic_telemetry_tx.production.o
 _RB4PPS E9C 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
-_RB5PPS E9D 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
+_RB6PPS E9E 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 _RB7PPS E9F 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 _RC1REG 199 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 _RC1STA 19D 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
@@ -1810,16 +1810,16 @@ I2C1_SetCallback@ptr 73 0 COMMON 1 cstackCOMMON dist/default/production\sonic_te
 __end_of_I2C1_MasterIsNack 3BB0 0 CODE 0 text60 dist/default/production\sonic_telemetry_tx.production.o
 _TX1REG 19A 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 _TX1STA 19E 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
-__end_of_EUSART_DefaultFramingErrorHandler 3A8E 0 CODE 0 text101 dist/default/production\sonic_telemetry_tx.production.o
+__end_of_EUSART_DefaultFramingErrorHandler 2002 0 CODE 0 text101 dist/default/production\sonic_telemetry_tx.production.o
 __end_of_EUSART_DefaultOverrunErrorHandler 3AD8 0 CODE 0 text100 dist/default/production\sonic_telemetry_tx.production.o
 __size_of_I2C1_MasterSendNack 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
-__end_of_printf 2026 0 CODE 0 text6 dist/default/production\sonic_telemetry_tx.production.o
+__end_of_printf 2024 0 CODE 0 text6 dist/default/production\sonic_telemetry_tx.production.o
 _I2C1_Status 1A0 0 BANK3 1 bssBANK3 dist/default/production\sonic_telemetry_tx.production.o
 _WDTCON 97 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 fputc@fp 76 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.production.o
 fputs@fp 20 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
 _EUSART_TxDefaultInterruptHandler 16D 0 BANK2 1 nvBANK2 dist/default/production\sonic_telemetry_tx.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\zameer\AppData\Local\Temp\s92s.o
+___int_sp 0 0 STACK 2 stack C:\Users\zameer\AppData\Local\Temp\s2b0.o
 __end_of_setLow 3C84 0 CODE 0 text3 dist/default/production\sonic_telemetry_tx.production.o
 I2C1_Read1ByteRegister@returnValue 2B 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
 _rd2RegCompleteHandler 3D3E 0 CODE 0 text70 dist/default/production\sonic_telemetry_tx.production.o
@@ -1940,7 +1940,7 @@ __size_of_I2C1_DO_ADDRESS_NACK 0 0 ABS 0 - dist/default/production\sonic_telemet
 __end_of_I2C1_MasterSetIrq 3ACA 0 CODE 0 text59 dist/default/production\sonic_telemetry_tx.production.o
 ___flmul@grs 2E 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
 __Linittext 0 0 ABS 0 inittext -
-_PORTCbits E 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
+_PORTAbits C 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 _wr1RegCompleteHandler 3D5E 0 CODE 0 text69 dist/default/production\sonic_telemetry_tx.production.o
 __end_of_strncmp 274E 0 CODE 0 text9 dist/default/production\sonic_telemetry_tx.production.o
 _INTCONbits B 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
@@ -1987,7 +1987,7 @@ __pnvBANK3 1D6 0 BANK3 1 nvBANK3 dist/default/production\sonic_telemetry_tx.prod
 _SSP1CON1 215 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 _SSP1CON2 216 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 _SSP1STAT 214 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
-__end_of_I2C1_Read1ByteRegister 22C2 0 CODE 0 text34 dist/default/production\sonic_telemetry_tx.production.o
+__end_of_I2C1_Read1ByteRegister 22C0 0 CODE 0 text34 dist/default/production\sonic_telemetry_tx.production.o
 ___fleq 2620 0 CODE 0 text29 dist/default/production\sonic_telemetry_tx.production.o
 ___flge 2AEE 0 CODE 0 text28 dist/default/production\sonic_telemetry_tx.production.o
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
@@ -2005,20 +2005,20 @@ __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 _pad 274E 0 CODE 0 text14 dist/default/production\sonic_telemetry_tx.production.o
 sendPWM@j 72 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.production.o
-__end_of_I2C1_DO_ADDRESS_NACK 225E 0 CODE 0 text43 dist/default/production\sonic_telemetry_tx.production.o
+__end_of_I2C1_DO_ADDRESS_NACK 225C 0 CODE 0 text43 dist/default/production\sonic_telemetry_tx.production.o
 __size_of_I2C1_MasterDisableIrq 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
-_I2C1_CallbackReturnStop 2000 0 CODE 0 text67 dist/default/production\sonic_telemetry_tx.production.o
+_I2C1_CallbackReturnStop 3A8A 0 CODE 0 text67 dist/default/production\sonic_telemetry_tx.production.o
 __end_of_I2C1_CallbackReturnReset 8 0 CODE 0 text66 dist/default/production\sonic_telemetry_tx.production.o
 I2C1_Open@address 72 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.production.o
 ___fpclassifyf 29FE 0 CODE 0 text21 dist/default/production\sonic_telemetry_tx.production.o
-__end_of_EUSART_Receive_ISR 232A 0 CODE 0 text99 dist/default/production\sonic_telemetry_tx.production.o
+__end_of_EUSART_Receive_ISR 2328 0 CODE 0 text99 dist/default/production\sonic_telemetry_tx.production.o
 __end_of_I2C1_DO_SEND_STOP 3B10 0 CODE 0 text48 dist/default/production\sonic_telemetry_tx.production.o
 _efgtoa BA 0 CODE 0 text10 dist/default/production\sonic_telemetry_tx.production.o
 __size_of_tolower 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
-__end_of_I2C1_CallbackReturnStop 2004 0 CODE 0 text67 dist/default/production\sonic_telemetry_tx.production.o
+__end_of_I2C1_CallbackReturnStop 3A8E 0 CODE 0 text67 dist/default/production\sonic_telemetry_tx.production.o
 _I2C1_DO_RESET 3B54 0 CODE 0 text44 dist/default/production\sonic_telemetry_tx.production.o
 _SYSTEM_Initialize 3E38 0 CODE 0 text83 dist/default/production\sonic_telemetry_tx.production.o
-_vfpfcnvrt$1529 65 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
+_vfpfcnvrt$1517 65 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
 ___xxtofl 2BE6 0 CODE 0 text33 dist/default/production\sonic_telemetry_tx.production.o
 _floorf DE2 0 CODE 0 text20 dist/default/production\sonic_telemetry_tx.production.o
 __size_of_I2C1_MasterOpen 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
@@ -2033,7 +2033,7 @@ __HnvBANK3 0 0 ABS 0 nvBANK3 -
 __Lintentry 8 0 CODE 0 intentry -
 strcpy@d 77 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.production.o
 strcpy@s 75 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\zameer\AppData\Local\Temp\s92s.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\zameer\AppData\Local\Temp\s2b0.o
 strlen@a 74 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.production.o
 strlen@s 75 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.production.o
 __size_of_wr2RegCompleteHandler 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
@@ -2068,15 +2068,15 @@ pad@buf 28 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.prod
 ___fladd@signs 28 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
 I2C1_SetDataCompleteCallback@cb 76 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.production.o
 __ptext10 BA 0 CODE 0 text10 dist/default/production\sonic_telemetry_tx.production.o
-__ptext11 2026 0 CODE 0 text11 dist/default/production\sonic_telemetry_tx.production.o
+__ptext11 2024 0 CODE 0 text11 dist/default/production\sonic_telemetry_tx.production.o
 __ptext12 3DAC 0 CODE 0 text12 dist/default/production\sonic_telemetry_tx.production.o
 __ptext13 3F82 0 CODE 0 text13 dist/default/production\sonic_telemetry_tx.production.o
 __ptext14 274E 0 CODE 0 text14 dist/default/production\sonic_telemetry_tx.production.o
 __ptext15 3E68 0 CODE 0 text15 dist/default/production\sonic_telemetry_tx.production.o
-__ptext16 20B2 0 CODE 0 text16 dist/default/production\sonic_telemetry_tx.production.o
-__ptext17 232A 0 CODE 0 text17 dist/default/production\sonic_telemetry_tx.production.o
+__ptext16 20B0 0 CODE 0 text16 dist/default/production\sonic_telemetry_tx.production.o
+__ptext17 2328 0 CODE 0 text17 dist/default/production\sonic_telemetry_tx.production.o
 __ptext18 3B5E 0 CODE 0 text18 dist/default/production\sonic_telemetry_tx.production.o
-__ptext19 206A 0 CODE 0 text19 dist/default/production\sonic_telemetry_tx.production.o
+__ptext19 2068 0 CODE 0 text19 dist/default/production\sonic_telemetry_tx.production.o
 __ptext20 DE2 0 CODE 0 text20 dist/default/production\sonic_telemetry_tx.production.o
 __ptext21 29FE 0 CODE 0 text21 dist/default/production\sonic_telemetry_tx.production.o
 __ptext22 2934 0 CODE 0 text22 dist/default/production\sonic_telemetry_tx.production.o
@@ -2091,7 +2091,7 @@ __ptext30 11BE 0 CODE 0 text30 dist/default/production\sonic_telemetry_tx.produc
 __ptext31 2508 0 CODE 0 text31 dist/default/production\sonic_telemetry_tx.production.o
 __ptext32 27EE 0 CODE 0 text32 dist/default/production\sonic_telemetry_tx.production.o
 __ptext33 2BE6 0 CODE 0 text33 dist/default/production\sonic_telemetry_tx.production.o
-__ptext34 225E 0 CODE 0 text34 dist/default/production\sonic_telemetry_tx.production.o
+__ptext34 225C 0 CODE 0 text34 dist/default/production\sonic_telemetry_tx.production.o
 __ptext35 3CCA 0 CODE 0 text35 dist/default/production\sonic_telemetry_tx.production.o
 __ptext36 F92 0 CODE 0 text36 dist/default/production\sonic_telemetry_tx.production.o
 __ptext37 3C84 0 CODE 0 text37 dist/default/production\sonic_telemetry_tx.production.o
@@ -2099,8 +2099,8 @@ __ptext38 3B30 0 CODE 0 text38 dist/default/production\sonic_telemetry_tx.produc
 __ptext39 3ECA 0 CODE 0 text39 dist/default/production\sonic_telemetry_tx.production.o
 __ptext40 3C48 0 CODE 0 text40 dist/default/production\sonic_telemetry_tx.production.o
 __ptext41 3B28 0 CODE 0 text41 dist/default/production\sonic_telemetry_tx.production.o
-__ptext42 214E 0 CODE 0 text42 dist/default/production\sonic_telemetry_tx.production.o
-__ptext43 2200 0 CODE 0 text43 dist/default/production\sonic_telemetry_tx.production.o
+__ptext42 214C 0 CODE 0 text42 dist/default/production\sonic_telemetry_tx.production.o
+__ptext43 21FE 0 CODE 0 text43 dist/default/production\sonic_telemetry_tx.production.o
 __ptext44 3B54 0 CODE 0 text44 dist/default/production\sonic_telemetry_tx.production.o
 __ptext45 3B20 0 CODE 0 text45 dist/default/production\sonic_telemetry_tx.production.o
 __ptext46 3B18 0 CODE 0 text46 dist/default/production\sonic_telemetry_tx.production.o
@@ -2115,7 +2115,7 @@ __ptext54 2890 0 CODE 0 text54 dist/default/production\sonic_telemetry_tx.produc
 __ptext55 3BD4 0 CODE 0 text55 dist/default/production\sonic_telemetry_tx.production.o
 __ptext56 3C02 0 CODE 0 text56 dist/default/production\sonic_telemetry_tx.production.o
 __ptext57 3B4A 0 CODE 0 text57 dist/default/production\sonic_telemetry_tx.production.o
-__ptext58 21A2 0 CODE 0 text58 dist/default/production\sonic_telemetry_tx.production.o
+__ptext58 21A0 0 CODE 0 text58 dist/default/production\sonic_telemetry_tx.production.o
 __ptext59 3AC4 0 CODE 0 text59 dist/default/production\sonic_telemetry_tx.production.o
 __ptext60 3BA4 0 CODE 0 text60 dist/default/production\sonic_telemetry_tx.production.o
 __ptext61 3B40 0 CODE 0 text61 dist/default/production\sonic_telemetry_tx.production.o
@@ -2124,14 +2124,14 @@ __ptext63 3ABE 0 CODE 0 text63 dist/default/production\sonic_telemetry_tx.produc
 __ptext64 3AE0 0 CODE 0 text64 dist/default/production\sonic_telemetry_tx.production.o
 __ptext65 3AB8 0 CODE 0 text65 dist/default/production\sonic_telemetry_tx.production.o
 __ptext66 4 0 CODE 0 text66 dist/default/production\sonic_telemetry_tx.production.o
-__ptext67 2000 0 CODE 0 text67 dist/default/production\sonic_telemetry_tx.production.o
+__ptext67 3A8A 0 CODE 0 text67 dist/default/production\sonic_telemetry_tx.production.o
 __ptext68 3D7E 0 CODE 0 text68 dist/default/production\sonic_telemetry_tx.production.o
 __ptext69 3D5E 0 CODE 0 text69 dist/default/production\sonic_telemetry_tx.production.o
 __ptext70 3D3E 0 CODE 0 text70 dist/default/production\sonic_telemetry_tx.production.o
 __ptext71 3D1E 0 CODE 0 text71 dist/default/production\sonic_telemetry_tx.production.o
 __ptext72 3CFE 0 CODE 0 text72 dist/default/production\sonic_telemetry_tx.production.o
 __ptext73 3CB2 0 CODE 0 text73 dist/default/production\sonic_telemetry_tx.production.o
-__ptext74 20FE 0 CODE 0 text74 dist/default/production\sonic_telemetry_tx.production.o
+__ptext74 20FC 0 CODE 0 text74 dist/default/production\sonic_telemetry_tx.production.o
 __ptext75 3CE2 0 CODE 0 text75 dist/default/production\sonic_telemetry_tx.production.o
 __ptext76 3AB2 0 CODE 0 text76 dist/default/production\sonic_telemetry_tx.production.o
 __ptext77 3AAC 0 CODE 0 text77 dist/default/production\sonic_telemetry_tx.production.o
@@ -2145,7 +2145,7 @@ __ptext84 3AD8 0 CODE 0 text84 dist/default/production\sonic_telemetry_tx.produc
 __ptext85 3BF2 0 CODE 0 text85 dist/default/production\sonic_telemetry_tx.production.o
 __ptext86 3C9A 0 CODE 0 text86 dist/default/production\sonic_telemetry_tx.production.o
 __ptext87 3BE2 0 CODE 0 text87 dist/default/production\sonic_telemetry_tx.production.o
-__ptext88 2394 0 CODE 0 text88 dist/default/production\sonic_telemetry_tx.production.o
+__ptext88 2392 0 CODE 0 text88 dist/default/production\sonic_telemetry_tx.production.o
 __ptext89 3C24 0 CODE 0 text89 dist/default/production\sonic_telemetry_tx.production.o
 __ptext90 3C12 0 CODE 0 text90 dist/default/production\sonic_telemetry_tx.production.o
 __ptext91 2482 0 CODE 0 text91 dist/default/production\sonic_telemetry_tx.production.o
@@ -2155,10 +2155,10 @@ __ptext94 3B80 0 CODE 0 text94 dist/default/production\sonic_telemetry_tx.produc
 __ptext95 3B74 0 CODE 0 text95 dist/default/production\sonic_telemetry_tx.production.o
 __ptext96 3B68 0 CODE 0 text96 dist/default/production\sonic_telemetry_tx.production.o
 __ptext98 3FC0 0 CODE 0 text98 dist/default/production\sonic_telemetry_tx.production.o
-__ptext99 22C2 0 CODE 0 text99 dist/default/production\sonic_telemetry_tx.production.o
+__ptext99 22C0 0 CODE 0 text99 dist/default/production\sonic_telemetry_tx.production.o
 __size_of_EUSART_DefaultErrorHandler 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 __end_of_readPressureSensor 3000 0 CODE 0 text5 dist/default/production\sonic_telemetry_tx.production.o
-_EUSART_Receive_ISR 22C2 0 CODE 0 text99 dist/default/production\sonic_telemetry_tx.production.o
+_EUSART_Receive_ISR 22C0 0 CODE 0 text99 dist/default/production\sonic_telemetry_tx.production.o
 _I2C1_DO_RX_ACK 3B10 0 CODE 0 text47 dist/default/production\sonic_telemetry_tx.production.o
 __end_of_I2C1_MasterEnableRestart 3AB2 0 CODE 0 text77 dist/default/production\sonic_telemetry_tx.production.o
 __end_of_PIN_MANAGER_Initialize 2408 0 CODE 0 text88 dist/default/production\sonic_telemetry_tx.production.o
@@ -2204,7 +2204,7 @@ __Umul8_16@multiplier 79 0 COMMON 1 cstackCOMMON dist/default/production\sonic_t
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 1000E 0 CONFIG 0 config -
 __end_of_I2C1_Open 1000 0 CODE 0 text36 dist/default/production\sonic_telemetry_tx.production.o
-_printf 2004 0 CODE 0 text6 dist/default/production\sonic_telemetry_tx.production.o
+_printf 2002 0 CODE 0 text6 dist/default/production\sonic_telemetry_tx.production.o
 __CFG_CP$OFF 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 __size_of_efgtoa 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 __size_of_I2C1_MasterClearIrq 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
@@ -2215,13 +2215,13 @@ strncmp@r 77 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 _I2C1_MasterSetIrq 3AC4 0 CODE 0 text59 dist/default/production\sonic_telemetry_tx.production.o
 __Hinittext 0 0 ABS 0 inittext -
-_LATCbits 10E 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
+_LATAbits 10C 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 __size_of_I2C1_Open 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 ___fldiv@grs 3A 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
 ___fldiv@rem 33 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
 __end_of_I2C1_DO_SEND_ADR_WRITE 3BE2 0 CODE 0 text55 dist/default/production\sonic_telemetry_tx.production.o
 __size_of_floorf 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
-_I2C1_MasterFsm 214E 0 CODE 0 text42 dist/default/production\sonic_telemetry_tx.production.o
+_I2C1_MasterFsm 214C 0 CODE 0 text42 dist/default/production\sonic_telemetry_tx.production.o
 I2C1_SetAddressNackCallback@ptr 78 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.production.o
 I2C1_MasterOperation@returnValue 27 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
 main@F7271 169 0 BANK2 1 dataBANK2 dist/default/production\sonic_telemetry_tx.production.o
@@ -2282,7 +2282,7 @@ _rd1RegCompleteHandler 3D1E 0 CODE 0 text71 dist/default/production\sonic_teleme
 _PIR1bits 11 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 _I2C1_MasterOperation 3ECA 0 CODE 0 text39 dist/default/production\sonic_telemetry_tx.production.o
 __Lend_init 46 0 CODE 0 end_init -
-__end_of_tolower 206A 0 CODE 0 text11 dist/default/production\sonic_telemetry_tx.production.o
+__end_of_tolower 2068 0 CODE 0 text11 dist/default/production\sonic_telemetry_tx.production.o
 _EUSART_DefaultErrorHandler 3A8E 0 CODE 0 text102 dist/default/production\sonic_telemetry_tx.production.o
 __CFG_LVP$ON 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 __CFG_CSWEN$ON 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
@@ -2324,7 +2324,7 @@ __HbssBANK4 0 0 ABS 0 bssBANK4 -
 __size_of_setLow 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 ___awmod@dividend 73 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.production.o
 __end_of_I2C1_Poller 3C5C 0 CODE 0 text40 dist/default/production\sonic_telemetry_tx.production.o
-__end_of_I2C1_MasterFsm 21A2 0 CODE 0 text42 dist/default/production\sonic_telemetry_tx.production.o
+__end_of_I2C1_MasterFsm 21A0 0 CODE 0 text42 dist/default/production\sonic_telemetry_tx.production.o
 _I2C1_Close 3E98 0 CODE 0 text79 dist/default/production\sonic_telemetry_tx.production.o
 _I2C1_DO_RX 2592 0 CODE 0 text53 dist/default/production\sonic_telemetry_tx.production.o
 _I2C1_DO_TX 2890 0 CODE 0 text54 dist/default/production\sonic_telemetry_tx.production.o
@@ -2341,7 +2341,7 @@ __ptext2 2408 0 CODE 0 text2 dist/default/production\sonic_telemetry_tx.producti
 __ptext3 3C70 0 CODE 0 text3 dist/default/production\sonic_telemetry_tx.production.o
 __ptext4 3C5C 0 CODE 0 text4 dist/default/production\sonic_telemetry_tx.production.o
 __ptext5 2D12 0 CODE 0 text5 dist/default/production\sonic_telemetry_tx.production.o
-__ptext6 2004 0 CODE 0 text6 dist/default/production\sonic_telemetry_tx.production.o
+__ptext6 2002 0 CODE 0 text6 dist/default/production\sonic_telemetry_tx.production.o
 __ptext7 1000 0 CODE 0 text7 dist/default/production\sonic_telemetry_tx.production.o
 __ptext8 14B2 0 CODE 0 text8 dist/default/production\sonic_telemetry_tx.production.o
 __ptext9 26B2 0 CODE 0 text9 dist/default/production\sonic_telemetry_tx.production.o
@@ -2383,7 +2383,7 @@ __Hstringtext9 0 0 ABS 0 stringtext9 -
 __end_of_vfprintf 1066 0 CODE 0 text7 dist/default/production\sonic_telemetry_tx.production.o
 _strncmp 26B2 0 CODE 0 text9 dist/default/production\sonic_telemetry_tx.production.o
 __end_of_I2C1_MasterClose 3AA0 0 CODE 0 text81 dist/default/production\sonic_telemetry_tx.production.o
-_I2C1_SetCallback 20FE 0 CODE 0 text74 dist/default/production\sonic_telemetry_tx.production.o
+_I2C1_SetCallback 20FC 0 CODE 0 text74 dist/default/production\sonic_telemetry_tx.production.o
 I2C1_SetCallback@cb 71 0 COMMON 1 cstackCOMMON dist/default/production\sonic_telemetry_tx.production.o
 _eusartRxStatusBuffer 148 0 BANK2 1 bssBANK2 dist/default/production\sonic_telemetry_tx.production.o
 _SLRCONA 30C 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
@@ -2442,8 +2442,8 @@ _raw_temperature 167 0 BANK2 1 bssBANK2 dist/default/production\sonic_telemetry_
 I2C1_Read1ByteRegister@address 2A 0 BANK0 1 cstackBANK0 dist/default/production\sonic_telemetry_tx.production.o
 printf@fmt E1 0 BANK1 1 cstackBANK1 dist/default/production\sonic_telemetry_tx.production.o
 __end_of_EUSART_RxDataHandler 3E38 0 CODE 0 text103 dist/default/production\sonic_telemetry_tx.production.o
-__end_of_fputc 2394 0 CODE 0 text17 dist/default/production\sonic_telemetry_tx.production.o
-__end_of_fputs 20FE 0 CODE 0 text16 dist/default/production\sonic_telemetry_tx.production.o
+__end_of_fputc 2392 0 CODE 0 text17 dist/default/production\sonic_telemetry_tx.production.o
+__end_of_fputs 20FC 0 CODE 0 text16 dist/default/production\sonic_telemetry_tx.production.o
 _I2C1_SetBuffer 3CE2 0 CODE 0 text75 dist/default/production\sonic_telemetry_tx.production.o
 _OSCEN 91D 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 _RXPPS E24 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
@@ -2454,18 +2454,18 @@ _TRISC 8E 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 __end_of_putch 3B68 0 CODE 0 text18 dist/default/production\sonic_telemetry_tx.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
-_I2C1_DO_ADDRESS_NACK 2200 0 CODE 0 text43 dist/default/production\sonic_telemetry_tx.production.o
+_I2C1_DO_ADDRESS_NACK 21FE 0 CODE 0 text43 dist/default/production\sonic_telemetry_tx.production.o
 _flags 15E 0 BANK2 1 bssBANK2 dist/default/production\sonic_telemetry_tx.production.o
-_fputc 232A 0 CODE 0 text17 dist/default/production\sonic_telemetry_tx.production.o
-_fputs 20B2 0 CODE 0 text16 dist/default/production\sonic_telemetry_tx.production.o
+_fputc 2328 0 CODE 0 text17 dist/default/production\sonic_telemetry_tx.production.o
+_fputs 20B0 0 CODE 0 text16 dist/default/production\sonic_telemetry_tx.production.o
 _putch 3B5E 0 CODE 0 text18 dist/default/production\sonic_telemetry_tx.production.o
 __CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
-_efgtoa$1500 A4 0 BANK1 1 cstackBANK1 dist/default/production\sonic_telemetry_tx.production.o
-_efgtoa$1501 A6 0 BANK1 1 cstackBANK1 dist/default/production\sonic_telemetry_tx.production.o
-_efgtoa$1506 A8 0 BANK1 1 cstackBANK1 dist/default/production\sonic_telemetry_tx.production.o
-_efgtoa$1510 AA 0 BANK1 1 cstackBANK1 dist/default/production\sonic_telemetry_tx.production.o
-_efgtoa$1511 AC 0 BANK1 1 cstackBANK1 dist/default/production\sonic_telemetry_tx.production.o
-_efgtoa$1512 AE 0 BANK1 1 cstackBANK1 dist/default/production\sonic_telemetry_tx.production.o
+_efgtoa$1488 A4 0 BANK1 1 cstackBANK1 dist/default/production\sonic_telemetry_tx.production.o
+_efgtoa$1489 A6 0 BANK1 1 cstackBANK1 dist/default/production\sonic_telemetry_tx.production.o
+_efgtoa$1494 A8 0 BANK1 1 cstackBANK1 dist/default/production\sonic_telemetry_tx.production.o
+_efgtoa$1498 AA 0 BANK1 1 cstackBANK1 dist/default/production\sonic_telemetry_tx.production.o
+_efgtoa$1499 AC 0 BANK1 1 cstackBANK1 dist/default/production\sonic_telemetry_tx.production.o
+_efgtoa$1500 AE 0 BANK1 1 cstackBANK1 dist/default/production\sonic_telemetry_tx.production.o
 _width 15A 0 BANK2 1 bssBANK2 dist/default/production\sonic_telemetry_tx.production.o
 _temperature 1D6 0 BANK3 1 nvBANK3 dist/default/production\sonic_telemetry_tx.production.o
 __size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
@@ -2493,7 +2493,7 @@ __pbssBANK3 1A0 0 BANK3 1 bssBANK3 dist/default/production\sonic_telemetry_tx.pr
 __pbssBANK4 220 0 BANK4 1 bssBANK4 dist/default/production\sonic_telemetry_tx.production.o
 __size_of_I2C1_DO_SEND_ADR_WRITE 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 _T2CONbits 1F 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
-_I2C1_DO_TX_EMPTY 21A2 0 CODE 0 text58 dist/default/production\sonic_telemetry_tx.production.o
+_I2C1_DO_TX_EMPTY 21A0 0 CODE 0 text58 dist/default/production\sonic_telemetry_tx.production.o
 _EUSART_Transmit_ISR 3FC0 0 CODE 0 text98 dist/default/production\sonic_telemetry_tx.production.o
 __CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\sonic_telemetry_tx.production.o
 _eusartRxHead 7C 0 COMMON 1 bssCOMMON dist/default/production\sonic_telemetry_tx.production.o
@@ -2537,24 +2537,24 @@ text2 0 1204 2408 3D 2
 text3 0 1E38 3C70 A 2
 text4 0 1E2E 3C5C A 2
 text5 0 1689 2D12 177 2
-text6 0 1002 2004 11 2
+text6 0 1001 2002 11 2
 text8 0 A59 14B2 199 2
 text9 0 1359 26B2 4E 2
-text11 0 1013 2026 22 2
+text11 0 1012 2024 22 2
 text12 0 1ED6 3DAC 17 2
 text13 0 1FC1 3F82 1F 2
 text14 0 13A7 274E 50 2
 text15 0 1F34 3E68 18 2
-text16 0 1059 20B2 26 2
-text17 0 1195 232A 35 2
+text16 0 1058 20B0 26 2
+text17 0 1194 2328 35 2
 text18 0 1DAF 3B5E 5 2
-text19 0 1035 206A 24 2
+text19 0 1034 2068 24 2
 text21 0 14FF 29FE 78 2
 text22 0 149A 2934 65 2
 text23 0 1FA2 3F44 1F 2
 text24 0 BF2 17E4 1E2 2
 text25 0 1E1B 3C36 9 2
-text26 0 DD4 1BA8 22E 2
+text26 0 DD4 1BA8 22D 2
 text27 0 1F83 3F06 1F 2
 text28 0 1577 2AEE 7C 2
 text29 0 1310 2620 49 2
@@ -2562,15 +2562,15 @@ text30 0 8DF 11BE 17A 2
 text31 0 1284 2508 45 2
 text32 0 13F7 27EE 51 2
 text33 0 15F3 2BE6 96 2
-text34 0 112F 225E 32 2
+text34 0 112E 225C 32 2
 text35 0 1E65 3CCA C 2
 text37 0 1E42 3C84 B 2
 text38 0 1D98 3B30 4 2
 text39 0 1F65 3ECA 1E 2
 text40 0 1E24 3C48 A 2
 text41 0 1D94 3B28 4 2
-text42 0 10A7 214E 2A 2
-text43 0 1100 2200 2F 2
+text42 0 10A6 214C 2A 2
+text43 0 10FF 21FE 2F 2
 text44 0 1DAA 3B54 5 2
 text45 0 1D90 3B20 4 2
 text46 0 1D8C 3B18 4 2
@@ -2585,7 +2585,7 @@ text54 0 1448 2890 52 2
 text55 0 1DEA 3BD4 7 2
 text56 0 1E01 3C02 8 2
 text57 0 1DA5 3B4A 5 2
-text58 0 10D1 21A2 2F 2
+text58 0 10D0 21A0 2F 2
 text59 0 1D62 3AC4 3 2
 text60 0 1DD2 3BA4 6 2
 text61 0 1DA0 3B40 5 2
@@ -2593,13 +2593,14 @@ text62 0 1D74 3AE8 4 2
 text63 0 1D5F 3ABE 3 2
 text64 0 1D70 3AE0 4 2
 text65 0 1D5C 3AB8 3 2
+text67 0 1D45 3A8A 2 2
 text68 0 1EBF 3D7E 17 2
 text69 0 1EAF 3D5E 10 2
 text70 0 1E9F 3D3E 10 2
 text71 0 1E8F 3D1E 10 2
 text72 0 1E7F 3CFE 10 2
 text73 0 1E59 3CB2 C 2
-text74 0 107F 20FE 28 2
+text74 0 107E 20FC 28 2
 text75 0 1E71 3CE2 E 2
 text76 0 1D59 3AB2 3 2
 text77 0 1D56 3AAC 3 2
@@ -2613,7 +2614,7 @@ text84 0 1D6C 3AD8 4 2
 text85 0 1DF9 3BF2 8 2
 text86 0 1E4D 3C9A C 2
 text87 0 1DF1 3BE2 8 2
-text88 0 11CA 2394 3A 2
+text88 0 11C9 2392 3B 2
 text89 0 1E12 3C24 9 2
 text90 0 1E09 3C12 9 2
 text91 0 1241 2482 43 2
@@ -2623,7 +2624,7 @@ text94 0 1DC0 3B80 6 2
 text95 0 1DBA 3B74 6 2
 text96 0 1DB4 3B68 6 2
 text98 0 1FE0 3FC0 20 2
-text99 0 1161 22C2 34 2
+text99 0 1160 22C0 34 2
 maintext 0 833 1066 AC 2
 cstackCOMMON 1 70 70 D 1
 cstackBANK0 1 20 20 50 1
@@ -2641,7 +2642,6 @@ idataBANK5 0 1EED 3DDA 17 2
 dataBANK5 1 2A0 2A0 17 1
 clrtext 0 1DDE 3BBC 6 2
 text100 0 1D68 3AD0 4 2
-text101 0 1D46 3A8C 1 2
 text102 0 1D47 3A8E 3 2
 text103 0 1F04 3E08 18 2
 config 0 8007 1000E 4 2

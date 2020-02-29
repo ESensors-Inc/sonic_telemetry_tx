@@ -154,6 +154,7 @@ void main(void) {
     // initialize the device
     SYSTEM_Initialize();
     setZero(); //shutdown the PWM
+//    CS_SetHigh();
     pressure = 1013.134;
     temperature = 24.76;
     // When using interrupts, you need to set the Global and Peripheral Interrupt Enable bits
@@ -182,20 +183,21 @@ void main(void) {
 
         /*The whole sending data sequence through PWM and UART*/
         //keep the PWM on PORTC in high input impedance state
-        TRISC = 0xFF;
-        if (PORTCbits.RC4 == 1) {
+        TRISC = 0xDD;        
+        if (SWITCH_GetValue() == 1) {
         }//check if button is pressed and start sending
         else {
             // routine to measure pressure and sensor
             readPressureSensor();
             __delay_ms(500);
-            LATCbits.LATC3 = 1; //turn ON LED to indicate transmission
-            TRISC = 0xBF; //set the PORT C PWM to o/p
+            LED_SetHigh(); //turn ON LED to indicate transmission
+            TRISC = 0x9D; //set the PORT C PWM to o/p
             /*DATA EXPERIMENTS START*/
             
 //            for (i = 0; i < n; i++) {
 //                sendPWM(&dummy_data[i]);
 //            }
+//            printf("Hello testing\n");  
             for(i=0;i<4;++i){
                 sendPWM(&hdr_trl[i]);
             }
@@ -210,7 +212,7 @@ void main(void) {
             }
             /*DATA EXPERIMENTS END*/
             
-            LATCbits.LATC3 = 0; //turn OFF LED to indicate end
+            LED_SetLow(); //turn OFF LED to indicate end
         }
     }
 }

@@ -11789,7 +11789,7 @@ uint16_t raw_temperature;
 uint8_t value;
 static float pressure;
 static float temperature;
-uint8_t packet[9];
+unsigned char packet[9];
 
 
 
@@ -11837,54 +11837,29 @@ _Bool sendPWM(uint8_t *data) {
 void readPressureSensor() {
 
 
-    value = I2C1_Read1ByteRegister(0x5D, 0x2A);
-    raw_pressure = value;
-
-
-    packet[0] = value;
-
-
-    value = (I2C1_Read1ByteRegister(0x5D, 0x29));
-    raw_pressure = (raw_pressure << 8) | value;
-
-
-    packet[1] = value;
-
-
-    value = (I2C1_Read1ByteRegister(0x5D, 0x28));
-    raw_pressure = (raw_pressure << 8) | value;
-
-
-    packet[2] = value;
-
-
+    raw_pressure = 0;
+    raw_pressure = I2C1_Read1ByteRegister(0x5D, 0x2A);
+    packet[0] = raw_pressure;
+    raw_pressure = (raw_pressure << 8) + I2C1_Read1ByteRegister(0x5D, 0x29);
+    packet[1] = (0x0f & raw_pressure);
+    raw_pressure = (raw_pressure << 8) + I2C1_Read1ByteRegister(0x5D, 0x28);
+    packet[2] = (0x0f & raw_pressure);
     if (raw_pressure & 0x800000) {
         raw_pressure = (0xff000000 | raw_pressure);
     }
     pressure = (float) (raw_pressure) / 4096.0;
-    _delay((unsigned long)((50)*(16000000/4000.0)));
+    _delay((unsigned long)((500)*(16000000/4000.0)));
 
 
-    value = I2C1_Read1ByteRegister(0x5D, 0x2C);
-    raw_temperature = value;
-
-
-    packet[3] = value;
-
-
-    value = (I2C1_Read1ByteRegister(0x5D, 0x2B));
-    raw_temperature = (raw_temperature << 8) | value;
-
-
-    packet[4] = value;
-
-
+    raw_temperature = 0;
+    raw_temperature = I2C1_Read1ByteRegister(0x5D, 0x2C);
+    packet[3] = (0x0f & raw_temperature);
+    raw_temperature = (raw_temperature << 8) + I2C1_Read1ByteRegister(0x5D, 0x2B);
+    packet[4] = (0x0f & raw_temperature);
     temperature = (float) (raw_temperature) / 100.00;
-
 
     printf("Pressure : %f\n", pressure);
     printf("Temperature : %f\n", temperature);
-
 }
 
 void sendFloat(float * f) {
@@ -11894,14 +11869,7 @@ void sendFloat(float * f) {
     sendPWM((*temp)++);
     sendPWM(*temp);
 }
-void initializePressureSensor(void){
-    I2C1_Write1ByteRegister(0x5D, 0x11, 0x14);
 
-    I2C1_Write1ByteRegister(0x5D, 0x10, 0x52);
-
-
-
-}
 
 
 
@@ -11913,9 +11881,7 @@ void main(void) {
 
     SYSTEM_Initialize();
     setZero();
-    do { LATCbits.LATC1 = 1; } while(0);
-    do { LATCbits.LATC5 = 1; } while(0);
-    initializePressureSensor();
+
     pressure = 1013.134;
     temperature = 24.76;
 

@@ -1,4 +1,4 @@
-# 1 "main.c"
+# 1 "mcc_generated_files/mcc.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,10 +6,10 @@
 # 1 "<built-in>" 2
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.05\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "main.c" 2
-# 44 "main.c"
-# 1 "./mcc_generated_files/mcc.h" 1
-# 49 "./mcc_generated_files/mcc.h"
+# 1 "mcc_generated_files/mcc.c" 2
+# 47 "mcc_generated_files/mcc.c"
+# 1 "mcc_generated_files/mcc.h" 1
+# 49 "mcc_generated_files/mcc.h"
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.05\\pic\\include\\xc.h" 1 3
 # 18 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.05\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -11342,17 +11342,17 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 27 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.05\\pic\\include\\xc.h" 2 3
-# 49 "./mcc_generated_files/mcc.h" 2
+# 49 "mcc_generated_files/mcc.h" 2
 
-# 1 "./mcc_generated_files/device_config.h" 1
-# 50 "./mcc_generated_files/mcc.h" 2
+# 1 "mcc_generated_files/device_config.h" 1
+# 50 "mcc_generated_files/mcc.h" 2
 
-# 1 "./mcc_generated_files/pin_manager.h" 1
-# 218 "./mcc_generated_files/pin_manager.h"
+# 1 "mcc_generated_files/pin_manager.h" 1
+# 218 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 230 "./mcc_generated_files/pin_manager.h"
+# 230 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
-# 51 "./mcc_generated_files/mcc.h" 2
+# 51 "mcc_generated_files/mcc.h" 2
 
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.05\\pic\\include\\c99\\stdint.h" 1 3
 # 22 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.05\\pic\\include\\c99\\stdint.h" 3
@@ -11437,10 +11437,10 @@ typedef int32_t int_fast32_t;
 typedef uint32_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
 # 155 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.05\\pic\\include\\c99\\stdint.h" 2 3
-# 52 "./mcc_generated_files/mcc.h" 2
+# 52 "mcc_generated_files/mcc.h" 2
 
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.05\\pic\\include\\c99\\stdbool.h" 1 3
-# 53 "./mcc_generated_files/mcc.h" 2
+# 53 "mcc_generated_files/mcc.h" 2
 
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.05\\pic\\include\\c99\\conio.h" 1 3
 
@@ -11473,13 +11473,13 @@ extern __bit kbhit(void);
 
 extern char * cgets(char *);
 extern void cputs(const char *);
-# 54 "./mcc_generated_files/mcc.h" 2
+# 54 "mcc_generated_files/mcc.h" 2
 
-# 1 "./mcc_generated_files/interrupt_manager.h" 1
-# 55 "./mcc_generated_files/mcc.h" 2
+# 1 "mcc_generated_files/interrupt_manager.h" 1
+# 55 "mcc_generated_files/mcc.h" 2
 
-# 1 "./mcc_generated_files/i2c1_master.h" 1
-# 54 "./mcc_generated_files/i2c1_master.h"
+# 1 "mcc_generated_files/i2c1_master.h" 1
+# 54 "mcc_generated_files/i2c1_master.h"
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.05\\pic\\include\\c99\\stdio.h" 1 3
 # 24 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.05\\pic\\include\\c99\\stdio.h" 3
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.05\\pic\\include\\c99\\bits/alltypes.h" 1 3
@@ -11616,7 +11616,7 @@ char *ctermid(char *);
 
 
 char *tempnam(const char *, const char *);
-# 54 "./mcc_generated_files/i2c1_master.h" 2
+# 54 "mcc_generated_files/i2c1_master.h" 2
 
 
 
@@ -11653,11 +11653,11 @@ i2c1_operations_t I2C1_CallbackRestartRead(void *funPtr);
 
 
 void I2C1_Initialize(void);
-# 101 "./mcc_generated_files/i2c1_master.h"
+# 101 "mcc_generated_files/i2c1_master.h"
 i2c1_error_t I2C1_Open(i2c1_address_t address);
-# 111 "./mcc_generated_files/i2c1_master.h"
+# 111 "mcc_generated_files/i2c1_master.h"
 i2c1_error_t I2C1_Close(void);
-# 123 "./mcc_generated_files/i2c1_master.h"
+# 123 "mcc_generated_files/i2c1_master.h"
 i2c1_error_t I2C1_MasterOperation(_Bool read);
 
 
@@ -11669,48 +11669,48 @@ i2c1_error_t I2C1_MasterWrite(void);
 
 
 i2c1_error_t I2C1_MasterRead(void);
-# 142 "./mcc_generated_files/i2c1_master.h"
+# 142 "mcc_generated_files/i2c1_master.h"
 void I2C1_SetTimeout(uint8_t timeOut);
-# 152 "./mcc_generated_files/i2c1_master.h"
+# 152 "mcc_generated_files/i2c1_master.h"
 void I2C1_SetBuffer(void *buffer, size_t bufferSize);
-# 164 "./mcc_generated_files/i2c1_master.h"
+# 164 "mcc_generated_files/i2c1_master.h"
 void I2C1_SetDataCompleteCallback(i2c1_callback_t cb, void *ptr);
-# 174 "./mcc_generated_files/i2c1_master.h"
+# 174 "mcc_generated_files/i2c1_master.h"
 void I2C1_SetWriteCollisionCallback(i2c1_callback_t cb, void *ptr);
-# 184 "./mcc_generated_files/i2c1_master.h"
+# 184 "mcc_generated_files/i2c1_master.h"
 void I2C1_SetAddressNackCallback(i2c1_callback_t cb, void *ptr);
-# 194 "./mcc_generated_files/i2c1_master.h"
+# 194 "mcc_generated_files/i2c1_master.h"
 void I2C1_SetDataNackCallback(i2c1_callback_t cb, void *ptr);
-# 204 "./mcc_generated_files/i2c1_master.h"
+# 204 "mcc_generated_files/i2c1_master.h"
 void I2C1_SetTimeoutCallback(i2c1_callback_t cb, void *ptr);
-# 56 "./mcc_generated_files/mcc.h" 2
+# 56 "mcc_generated_files/mcc.h" 2
 
-# 1 "./mcc_generated_files/tmr2.h" 1
-# 103 "./mcc_generated_files/tmr2.h"
+# 1 "mcc_generated_files/tmr2.h" 1
+# 103 "mcc_generated_files/tmr2.h"
 void TMR2_Initialize(void);
-# 132 "./mcc_generated_files/tmr2.h"
+# 132 "mcc_generated_files/tmr2.h"
 void TMR2_StartTimer(void);
-# 164 "./mcc_generated_files/tmr2.h"
+# 164 "mcc_generated_files/tmr2.h"
 void TMR2_StopTimer(void);
-# 199 "./mcc_generated_files/tmr2.h"
+# 199 "mcc_generated_files/tmr2.h"
 uint8_t TMR2_ReadTimer(void);
-# 238 "./mcc_generated_files/tmr2.h"
+# 238 "mcc_generated_files/tmr2.h"
 void TMR2_WriteTimer(uint8_t timerVal);
-# 290 "./mcc_generated_files/tmr2.h"
+# 290 "mcc_generated_files/tmr2.h"
 void TMR2_LoadPeriodRegister(uint8_t periodVal);
-# 325 "./mcc_generated_files/tmr2.h"
+# 325 "mcc_generated_files/tmr2.h"
 _Bool TMR2_HasOverflowOccured(void);
-# 57 "./mcc_generated_files/mcc.h" 2
+# 57 "mcc_generated_files/mcc.h" 2
 
-# 1 "./mcc_generated_files/pwm5.h" 1
-# 102 "./mcc_generated_files/pwm5.h"
+# 1 "mcc_generated_files/pwm5.h" 1
+# 102 "mcc_generated_files/pwm5.h"
  void PWM5_Initialize(void);
-# 129 "./mcc_generated_files/pwm5.h"
+# 129 "mcc_generated_files/pwm5.h"
  void PWM5_LoadDutyValue(uint16_t dutyValue);
-# 58 "./mcc_generated_files/mcc.h" 2
+# 58 "mcc_generated_files/mcc.h" 2
 
-# 1 "./mcc_generated_files/eusart.h" 1
-# 76 "./mcc_generated_files/eusart.h"
+# 1 "mcc_generated_files/eusart.h" 1
+# 76 "mcc_generated_files/eusart.h"
 typedef union {
     struct {
         unsigned perr : 1;
@@ -11732,248 +11732,94 @@ extern volatile uint8_t eusartRxCount;
 
 extern void (*EUSART_TxDefaultInterruptHandler)(void);
 extern void (*EUSART_RxDefaultInterruptHandler)(void);
-# 118 "./mcc_generated_files/eusart.h"
+# 118 "mcc_generated_files/eusart.h"
 void EUSART_Initialize(void);
-# 166 "./mcc_generated_files/eusart.h"
+# 166 "mcc_generated_files/eusart.h"
 _Bool EUSART_is_tx_ready(void);
-# 214 "./mcc_generated_files/eusart.h"
+# 214 "mcc_generated_files/eusart.h"
 _Bool EUSART_is_rx_ready(void);
-# 261 "./mcc_generated_files/eusart.h"
+# 261 "mcc_generated_files/eusart.h"
 _Bool EUSART_is_tx_done(void);
-# 309 "./mcc_generated_files/eusart.h"
+# 309 "mcc_generated_files/eusart.h"
 eusart_status_t EUSART_get_last_status(void);
-# 329 "./mcc_generated_files/eusart.h"
+# 329 "mcc_generated_files/eusart.h"
 uint8_t EUSART_Read(void);
-# 349 "./mcc_generated_files/eusart.h"
+# 349 "mcc_generated_files/eusart.h"
 void EUSART_Write(uint8_t txData);
-# 370 "./mcc_generated_files/eusart.h"
+# 370 "mcc_generated_files/eusart.h"
 void EUSART_Transmit_ISR(void);
-# 391 "./mcc_generated_files/eusart.h"
+# 391 "mcc_generated_files/eusart.h"
 void EUSART_Receive_ISR(void);
-# 412 "./mcc_generated_files/eusart.h"
+# 412 "mcc_generated_files/eusart.h"
 void EUSART_RxDataHandler(void);
-# 430 "./mcc_generated_files/eusart.h"
+# 430 "mcc_generated_files/eusart.h"
 void EUSART_SetFramingErrorHandler(void (* interruptHandler)(void));
-# 448 "./mcc_generated_files/eusart.h"
+# 448 "mcc_generated_files/eusart.h"
 void EUSART_SetOverrunErrorHandler(void (* interruptHandler)(void));
-# 466 "./mcc_generated_files/eusart.h"
+# 466 "mcc_generated_files/eusart.h"
 void EUSART_SetErrorHandler(void (* interruptHandler)(void));
-# 486 "./mcc_generated_files/eusart.h"
+# 486 "mcc_generated_files/eusart.h"
 void EUSART_SetTxInterruptHandler(void (* interruptHandler)(void));
-# 506 "./mcc_generated_files/eusart.h"
+# 506 "mcc_generated_files/eusart.h"
 void EUSART_SetRxInterruptHandler(void (* interruptHandler)(void));
-# 59 "./mcc_generated_files/mcc.h" 2
-# 74 "./mcc_generated_files/mcc.h"
+# 59 "mcc_generated_files/mcc.h" 2
+# 74 "mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 87 "./mcc_generated_files/mcc.h"
+# 87 "mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 99 "./mcc_generated_files/mcc.h"
+# 99 "mcc_generated_files/mcc.h"
 void WDT_Initialize(void);
-# 111 "./mcc_generated_files/mcc.h"
+# 111 "mcc_generated_files/mcc.h"
 void PMD_Initialize(void);
-# 44 "main.c" 2
-
-# 1 "./mcc_generated_files/examples/i2c1_master_example.h" 1
-# 54 "./mcc_generated_files/examples/i2c1_master_example.h"
-uint8_t I2C1_Read1ByteRegister(i2c1_address_t address, uint8_t reg);
-uint16_t I2C1_Read2ByteRegister(i2c1_address_t address, uint8_t reg);
-void I2C1_Write1ByteRegister(i2c1_address_t address, uint8_t reg, uint8_t data);
-void I2C1_Write2ByteRegister(i2c1_address_t address, uint8_t reg, uint16_t data);
-void I2C1_WriteNBytes(i2c1_address_t address, uint8_t *data, size_t len);
-void I2C1_ReadNBytes(i2c1_address_t address, uint8_t *data, size_t len);
-void I2C1_ReadDataBlock(i2c1_address_t address, uint8_t reg, uint8_t *data, size_t len);
-# 45 "main.c" 2
-# 60 "main.c"
-uint32_t raw_pressure;
-uint16_t raw_temperature;
-uint8_t value;
-static float pressure;
-static float temperature;
-uint8_t packet[9];
+# 47 "mcc_generated_files/mcc.c" 2
 
 
 
+void SYSTEM_Initialize(void)
+{
 
-
-
-void setHigh() {
-
-    PWM5CON = 0x80;
-    PR2 = 0x68;
-    PWM5DCH = 0x34;
-
+    PMD_Initialize();
+    I2C1_Initialize();
+    PIN_MANAGER_Initialize();
+    OSCILLATOR_Initialize();
+    WDT_Initialize();
+    TMR2_Initialize();
+    PWM5_Initialize();
+    EUSART_Initialize();
 }
 
-void setLow() {
+void OSCILLATOR_Initialize(void)
+{
 
-    PWM5CON = 0x80;
-    PR2 = 0x74;
-    PWM5DCH = 0x3A;
+    OSCCON1 = 0x60;
+
+    OSCCON3 = 0x00;
+
+    OSCEN = 0x00;
+
+    OSCFRQ = 0x06;
+
+    OSCTUNE = 0x00;
 }
 
-void setZero() {
+void WDT_Initialize(void)
+{
 
-    PWM5CON = 0x00;
+    WDTCON = 0x16;
 }
 
-_Bool sendPWM(uint8_t *data) {
-    uint8_t j = 0;
+void PMD_Initialize(void)
+{
 
-    setLow();
-    _delay((unsigned long)((13.3333333333)*(16000000/4000.0)));
+    PMD0 = 0x00;
 
-    for (j = 0; j < 8; j++) {
-        (!!((*data >> j)&0x01)) ? setHigh() : setLow();
-        _delay((unsigned long)((13.3333333333)*(16000000/4000.0)));
-    }
+    PMD1 = 0x00;
 
-    setHigh();
-    _delay((unsigned long)((13.3333333333)*(16000000/4000.0)));
-    if (*data == 0)return 1;
-    return 0;
+    PMD2 = 0x00;
 
-}
+    PMD3 = 0x00;
 
-void readPressureSensor() {
+    PMD4 = 0x00;
 
-
-    value = I2C1_Read1ByteRegister(0x5D, 0x2A);
-    raw_pressure = value;
-
-
-    packet[0] = value;
-
-
-    value = (I2C1_Read1ByteRegister(0x5D, 0x29));
-    raw_pressure = (raw_pressure << 8) | value;
-
-
-    packet[1] = value;
-
-
-    value = (I2C1_Read1ByteRegister(0x5D, 0x28));
-    raw_pressure = (raw_pressure << 8) | value;
-
-
-    packet[2] = value;
-
-
-    if (raw_pressure & 0x800000) {
-        raw_pressure = (0xff000000 | raw_pressure);
-    }
-    pressure = (float) (raw_pressure) / 4096.0;
-    _delay((unsigned long)((50)*(16000000/4000.0)));
-
-
-    value = I2C1_Read1ByteRegister(0x5D, 0x2C);
-    raw_temperature = value;
-
-
-    packet[3] = value;
-
-
-    value = (I2C1_Read1ByteRegister(0x5D, 0x2B));
-    raw_temperature = (raw_temperature << 8) | value;
-
-
-    packet[4] = value;
-
-
-    temperature = (float) (raw_temperature) / 100.00;
-
-
-    printf("Pressure : %f\n", pressure);
-    printf("Temperature : %f\n", temperature);
-
-}
-
-void sendFloat(float * f) {
-    unsigned char **temp = &f;
-    sendPWM((*temp)++);
-    sendPWM((*temp)++);
-    sendPWM((*temp)++);
-    sendPWM(*temp);
-}
-void initializePressureSensor(void){
-    I2C1_Write1ByteRegister(0x5D, 0x11, 0x14);
-
-    I2C1_Write1ByteRegister(0x5D, 0x10, 0x52);
-
-
-
-}
-
-
-
-void main(void) {
-
-    char hdr_trl[] = {0xFF, 0x00, 0xFF, 0x00};
-    char SOC = 0x16;
-    char EOC = 0x17;
-
-    SYSTEM_Initialize();
-    setZero();
-    do { LATCbits.LATC1 = 1; } while(0);
-    do { LATCbits.LATC5 = 1; } while(0);
-    initializePressureSensor();
-    pressure = 1013.134;
-    temperature = 24.76;
-
-
-
-
-    (INTCONbits.GIE = 1);
-
-
-    (INTCONbits.PEIE = 1);
-
-
-
-
-
-
-    char dummy_data[] = {0xFF, 0x00, 0xFF, 0x00, 0x16, 'H', 'E', 'L', 'L', 'O', ' ', 'S', 'E', 'N', 'S', 'O', 'R', 'S', 0x17, 0xFF, 0x00, 0xFF, 0x00};
-    uint8_t n = sizeof (dummy_data);
-    uint8_t i = 0;
-    packet[5] = 'D';
-    packet[6] = 'A';
-    packet[7] = 'T';
-    packet[8] = 'A';
-    while (1) {
-
-
-
-
-        TRISC = 0xDD;
-        if (PORTAbits.RA4 == 1) {
-        }
-        else {
-
-            readPressureSensor();
-            _delay((unsigned long)((500)*(16000000/4000.0)));
-            do { LATAbits.LATA2 = 1; } while(0);
-            TRISC = 0x9D;
-
-
-
-
-
-
-            for(i=0;i<4;++i){
-                sendPWM(&hdr_trl[i]);
-            }
-            sendPWM(&SOC);
-
-            for (i=0;i<9;++i){
-                sendPWM(&packet[i]);
-            }
-            sendPWM(&EOC);
-            for(i=0;i<4;++i){
-                sendPWM(&hdr_trl[i]);
-            }
-
-
-            do { LATAbits.LATA2 = 0; } while(0);
-        }
-    }
+    PMD5 = 0x00;
 }

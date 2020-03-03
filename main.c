@@ -62,7 +62,7 @@ uint16_t raw_temperature;
 uint8_t value;
 static float pressure;
 static float temperature;
-unsigned char packet[DATA_SIZE];
+uint8_t packet[DATA_SIZE];
 
 /*
  
@@ -110,29 +110,54 @@ bool sendPWM(uint8_t *data) {
 void readPressureSensor() {
 
     //read pressure registers
-    raw_pressure = 0;
-    raw_pressure = I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, PRSR_H);
-    packet[0] = raw_pressure;
-    raw_pressure = (raw_pressure << 8) + I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, PRSR_M);
-    packet[1] = (0x0f & raw_pressure);
-    raw_pressure = (raw_pressure << 8) + I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, PRSR_L);
-    packet[2] = (0x0f & raw_pressure);
+    value = I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, PRSR_H);
+    raw_pressure = value;
+//    raw_pressure = I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, PRSR_H);
+//    packet[0] |= (unsigned char) raw_pressure;
+    packet[0] = value;
+//    printf("%d\t", packet[0]);
+    
+    value = (I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, PRSR_M));
+    raw_pressure = (raw_pressure << 8) | value;
+//    raw_pressure = (raw_pressure << 8) | (I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, PRSR_M));
+//    packet[1] |= (unsigned char) (0x0f & raw_pressure);
+    packet[1] = value;    
+//    printf("%d\t", packet[1]);
+    
+    value = (I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, PRSR_L));
+    raw_pressure = (raw_pressure << 8) | value;
+//    raw_pressure = (raw_pressure << 8) | (I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, PRSR_L));
+//    packet[2] |= (unsigned char) (0x0f & raw_pressure);
+    packet[2] = value;
+//    printf("%d\t", packet[2]);
+    
     if (raw_pressure & 0x800000) {
         raw_pressure = (0xff000000 | raw_pressure);
     }
     pressure = (float) (raw_pressure) / 4096.0;
-    __delay_ms(500);
+    __delay_ms(50);
 
     //read temperature registers
-    raw_temperature = 0;
-    raw_temperature = I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, TMPR_H);
-    packet[3] = (0x0f & raw_temperature);
-    raw_temperature = (raw_temperature << 8) + I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, TMPR_L);
-    packet[4] = (0x0f & raw_temperature);
+    value = I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, TMPR_H);
+    raw_temperature = value;
+//    raw_temperature = I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, TMPR_H);    
+//    packet[3] = (unsigned char) raw_temperature;
+    packet[3] = value;
+//    printf("%d\t", packet[3]);
+    
+    value = (I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, TMPR_L));
+    raw_temperature = (raw_temperature << 8) | value;
+//    raw_temperature = (raw_temperature << 8) | (I2C1_Read1ByteRegister(PRSR_SNSR_ADDR, TMPR_L));
+//    packet[4] =(unsigned char)(0x0f & raw_temperature);
+    packet[4] = value;
+//    printf("%d\t", packet[4]);
+    
     temperature = (float) (raw_temperature) / 100.00;
-
+//    printf("%l ",raw_pressure);
+//    printf("%d ",raw_temperature);
     printf("Pressure : %f\n", pressure);
     printf("Temperature : %f\n", temperature);
+//    printf("\r");
 }
 
 void sendFloat(float * f) {
@@ -142,7 +167,14 @@ void sendFloat(float * f) {
     sendPWM((*temp)++);
     sendPWM(*temp);
 }
-
+void initializePressureSensor(void){
+    I2C1_Write1ByteRegister(PRSR_SNSR_ADDR, 0x11, 0x14);
+//    __delay_ms(500);
+    I2C1_Write1ByteRegister(PRSR_SNSR_ADDR, 0x10, 0x52);
+//    I2C1_Write1ByteRegister(PRSR_SNSR_ADDR, 0x11, 0x00);
+//    I2C1_Write1ByteRegister(PRSR_SNSR_ADDR, 0x11, 0x50);
+//    I2C1_Write1ByteRegister(PRSR_SNSR_ADDR, 0x14, 0x40);    
+}
 /*
                          Main application
  */
@@ -154,7 +186,9 @@ void main(void) {
     // initialize the device
     SYSTEM_Initialize();
     setZero(); //shutdown the PWM
-//    CS_SetHigh();
+    CS_SetHigh();
+    VDS_SetHigh();
+    initializePressureSensor();
     pressure = 1013.134;
     temperature = 24.76;
     // When using interrupts, you need to set the Global and Peripheral Interrupt Enable bits

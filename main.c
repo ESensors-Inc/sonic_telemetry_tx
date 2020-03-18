@@ -159,14 +159,14 @@ void readPressureSensor() {
     printf("Temperature : %f\n", temperature);
 //    printf("\r");
 }
-
-void sendFloat(float * f) {
-    unsigned char **temp = &f;
-    sendPWM((*temp)++);
-    sendPWM((*temp)++);
-    sendPWM((*temp)++);
-    sendPWM(*temp);
-}
+//
+//void sendFloat(float * f) {
+//    unsigned char **temp = &f;
+//    sendPWM((*temp)++);
+//    sendPWM((*temp)++);
+//    sendPWM((*temp)++);
+//    sendPWM(*temp);
+//}
 void initializePressureSensor(void){
     I2C1_Write1ByteRegister(PRSR_SNSR_ADDR, 0x11, 0x14);
 //    __delay_ms(500);
